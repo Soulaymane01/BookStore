@@ -1,0 +1,86 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "books": "Libros",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "cart": "Carrito",
+    "login": "Iniciar Sesión",
+    "dashboard": "Panel de Control"
+  },
+  "home": {
+    "hero": {
+      "title": "Descubre los Tesoros del Conocimiento Islámico",
+      "subtitle": "Explora nuestra colección de auténticos libros islámicos y árabes",
+      "cta": "Explorar Libros"
+    },
+    "featured": {
+      "title": "Libros Destacados",
+      "viewAll": "Ver Todos"
+    },
+    "categories": {
+      "title": "Explorar por Categoría",
+      "islamic": "Estudios Islámicos",
+      "quran": "Corán y Tafsir",
+      "hadith": "Hadiz",
+      "fiqh": "Fiqh",
+      "seerah": "Seerah y Biografía",
+      "history": "Historia Islámica"
+    }
+  },
+  "books": {
+    "search": "Buscar libros...",
+    "filter": "Filtrar",
+    "sort": "Ordenar por",
+    "price": "Precio",
+    "category": "Categoría",
+    "language": "Idioma",
+    "author": "Autor",
+    "addToCart": "Añadir al Carrito",
+    "viewDetails": "Ver Detalles"
+  },
+  "product": {
+    "addToCart": "Añadir al Carrito",
+    "buyNow": "Comprar Ahora",
+    "preview": "Vista Previa",
+    "description": "Descripción",
+    "details": "Detalles del Libro",
+    "reviews": "Reseñas",
+    "relatedBooks": "Libros Relacionados",
+    "inStock": "En Stock",
+    "outOfStock": "Agotado",
+    "contactUs": "Contáctenos",
+    "whatsapp": "Contactar por WhatsApp",
+    "email": "Contactar por Email"
+  },
+  "cart": {
+    "title": "Su Carrito",
+    "empty": "Su carrito está vacío",
+    "continueShopping": "Continuar Comprando",
+    "checkout": "Finalizar Compra",
+    "total": "Total",
+    "remove": "Eliminar",
+    "quantity": "Cantidad",
+    "summary": "Resumen del Pedido",
+    "subtotal": "Subtotal",
+    "shipping": "Envío",
+    "tax": "Impuesto"
+  },
+  "dashboard": {
+    "products": "Productos",
+    "orders": "Pedidos",
+    "customers": "Clientes",
+    "settings": "Configuración",
+    "addProduct": "Añadir Producto",
+    "editProduct": "Editar Producto",
+    "deleteProduct": "Eliminar Producto"
+  },
+  "footer": {
+    "about": "Acerca de Nosotros",
+    "contact": "Contáctenos",
+    "terms": "Términos de Servicio",
+    "privacy": "Política de Privacidad",
+    "copyright": "© 2024 Tienda de Libros Islámicos. Todos los derechos reservados."
+  }
+}
+

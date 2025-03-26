@@ -1,0 +1,86 @@
+{
+  "navigation": {
+    "home": "Home",
+    "books": "Books",
+    "about": "About",
+    "contact": "Contact",
+    "cart": "Cart",
+    "login": "Login",
+    "dashboard": "Dashboard"
+  },
+  "home": {
+    "hero": {
+      "title": "Discover the Treasures of Islamic Knowledge",
+      "subtitle": "Explore our collection of authentic Islamic and Arabic books",
+      "cta": "Browse Books"
+    },
+    "featured": {
+      "title": "Featured Books",
+      "viewAll": "View All"
+    },
+    "categories": {
+      "title": "Browse by Category",
+      "islamic": "Islamic Studies",
+      "quran": "Quran & Tafsir",
+      "hadith": "Hadith",
+      "fiqh": "Fiqh",
+      "seerah": "Seerah & Biography",
+      "history": "Islamic History"
+    }
+  },
+  "books": {
+    "search": "Search books...",
+    "filter": "Filter",
+    "sort": "Sort by",
+    "price": "Price",
+    "category": "Category",
+    "language": "Language",
+    "author": "Author",
+    "addToCart": "Add to Cart",
+    "viewDetails": "View Details"
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "buyNow": "Buy Now",
+    "preview": "Preview Pages",
+    "description": "Description",
+    "details": "Book Details",
+    "reviews": "Reviews",
+    "relatedBooks": "Related Books",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "contactUs": "Contact Us",
+    "whatsapp": "Contact via WhatsApp",
+    "email": "Contact via Email"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty",
+    "continueShopping": "Continue Shopping",
+    "checkout": "Checkout",
+    "total": "Total",
+    "remove": "Remove",
+    "quantity": "Quantity",
+    "summary": "Order Summary",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "tax": "Tax"
+  },
+  "dashboard": {
+    "products": "Products",
+    "orders": "Orders",
+    "customers": "Customers",
+    "settings": "Settings",
+    "addProduct": "Add Product",
+    "editProduct": "Edit Product",
+    "deleteProduct": "Delete Product"
+  },
+  "footer": {
+    "about": "About Us",
+    "contact": "Contact Us",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2024 Islamic Books Store. All rights reserved."
+  }
+}
+

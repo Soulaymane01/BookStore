@@ -1,0 +1,86 @@
+{
+  "navigation": {
+    "home": "الرئيسية",
+    "books": "الكتب",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "cart": "سلة التسوق",
+    "login": "تسجيل الدخول",
+    "dashboard": "لوحة التحكم"
+  },
+  "home": {
+    "hero": {
+      "title": "اكتشف كنوز المعرفة الإسلامية",
+      "subtitle": "استكشف مجموعتنا من الكتب الإسلامية والعربية الأصيلة",
+      "cta": "تصفح الكتب"
+    },
+    "featured": {
+      "title": "كتب مميزة",
+      "viewAll": "عرض الكل"
+    },
+    "categories": {
+      "title": "تصفح حسب الفئة",
+      "islamic": "الدراسات الإسلامية",
+      "quran": "القرآن والتفسير",
+      "hadith": "الحديث",
+      "fiqh": "الفقه",
+      "seerah": "السيرة والتراجم",
+      "history": "التاريخ الإسلامي"
+    }
+  },
+  "books": {
+    "search": "البحث عن كتب...",
+    "filter": "تصفية",
+    "sort": "ترتيب حسب",
+    "price": "السعر",
+    "category": "الفئة",
+    "language": "اللغة",
+    "author": "المؤلف",
+    "addToCart": "أضف إلى السلة",
+    "viewDetails": "عرض التفاصيل"
+  },
+  "product": {
+    "addToCart": "أضف إلى السلة",
+    "buyNow": "اشتر الآن",
+    "preview": "معاينة الصفحات",
+    "description": "الوصف",
+    "details": "تفاصيل الكتاب",
+    "reviews": "المراجعات",
+    "relatedBooks": "كتب ذات صلة",
+    "inStock": "متوفر",
+    "outOfStock": "غير متوفر",
+    "contactUs": "اتصل بنا",
+    "whatsapp": "تواصل عبر واتساب",
+    "email": "تواصل عبر البريد الإلكتروني"
+  },
+  "cart": {
+    "title": "سلة التسوق",
+    "empty": "سلة التسوق فارغة",
+    "continueShopping": "مواصلة التسوق",
+    "checkout": "إتمام الشراء",
+    "total": "المجموع",
+    "remove": "إزالة",
+    "quantity": "الكمية",
+    "summary": "ملخص الطلب",
+    "subtotal": "المجموع الفرعي",
+    "shipping": "الشحن",
+    "tax": "الضريبة"
+  },
+  "dashboard": {
+    "products": "المنتجات",
+    "orders": "الطلبات",
+    "customers": "العملاء",
+    "settings": "الإعدادات",
+    "addProduct": "إضافة منتج",
+    "editProduct": "تعديل المنتج",
+    "deleteProduct": "حذف المنتج"
+  },
+  "footer": {
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "terms": "شروط الخدمة",
+    "privacy": "سياسة الخصوصية",
+    "copyright": "© 2024 متجر الكتب الإسلامية. جميع الحقوق محفوظة."
+  }
+}
+
