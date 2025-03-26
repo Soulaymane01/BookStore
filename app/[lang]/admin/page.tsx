@@ -1,8 +1,6 @@
 import { getDictionary } from "../dictionaries"
 import AdminDashboard from "./admin-dashboard"
-import { generateStaticParams } from "@/utils/generateStaticParams";
 
-export { generateStaticParams };
 
 interface AdminPageProps {
   params: { lang: string }

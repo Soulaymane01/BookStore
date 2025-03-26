@@ -2,9 +2,7 @@ import Image from "next/image"
 import { getDictionary } from "../dictionaries"
 import { Card, CardContent } from "@/components/ui/card"
 import { Book, Users, Globe, ShieldCheck } from "lucide-react"
-import { generateStaticParams } from "@/utils/generateStaticParams";
 
-export { generateStaticParams };
 
 interface AboutPageProps {
   params: { lang: string }
