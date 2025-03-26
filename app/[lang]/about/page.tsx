@@ -7,6 +7,16 @@ interface AboutPageProps {
   params: { lang: string }
 }
 
+
+export async function generateStaticParams() {
+  return [
+    { lang: "en" },
+    { lang: "ar" },
+    { lang: "es" },
+  ]
+}
+
+
 export default async function AboutPage({ params }: AboutPageProps) {
   const { lang } = params
   const dictionary = await getDictionary(lang)
