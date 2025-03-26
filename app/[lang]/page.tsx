@@ -3,6 +3,9 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { getDictionary } from "./dictionaries"
 import { BookOpen, BookText, History, Bookmark, ChevronRight, Star } from "lucide-react"
+import { generateStaticParams } from "@/utils/generateStaticParams";
+
+export { generateStaticParams };
 
 interface HomePageProps {
   params: { lang: string }
