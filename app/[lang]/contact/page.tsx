@@ -5,6 +5,9 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Mail, MessageSquare, Phone, MapPin } from "lucide-react"
+import { generateStaticParams } from "@/utils/generateStaticParams";
+
+export { generateStaticParams };
 
 interface ContactPageProps {
   params: { lang: string }

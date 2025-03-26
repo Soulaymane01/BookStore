@@ -1,5 +1,8 @@
 import { getDictionary } from "../dictionaries"
 import DashboardContent from "./dashboard-content"
+import { generateStaticParams } from "@/utils/generateStaticParams";
+
+export { generateStaticParams };
 
 interface DashboardPageProps {
   params: { lang: string }

@@ -1,4 +1,7 @@
 import { getDictionary } from "../../dictionaries"
+import { generateStaticParams } from "@/utils/generateStaticParams";
+
+export { generateStaticParams };
 
 interface ReturnPolicyPageProps {
   params: { lang: string }

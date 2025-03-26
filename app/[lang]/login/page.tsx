@@ -1,5 +1,8 @@
 import { getDictionary } from "../dictionaries"
 import LoginForm from "./login-form"
+import { generateStaticParams } from "@/utils/generateStaticParams";
+
+export { generateStaticParams };
 
 interface LoginPageProps {
   params: { lang: string }

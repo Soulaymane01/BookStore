@@ -3,6 +3,9 @@ import BooksList from "./books-list"
 import { useBookStore, type BookFilters } from "../lib/data"
 import { Suspense } from "react"
 import { Skeleton } from "@/components/ui/skeleton"
+import { generateStaticParams } from "@/utils/generateStaticParams";
+
+export { generateStaticParams };
 
 interface BooksPageProps {
   params: { lang: string }
