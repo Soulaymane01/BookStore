@@ -18,9 +18,7 @@ import { ShoppingCart, Heart, Share2, Book, MessageCircle, Mail, Star } from "lu
 import { useToast } from "@/components/ui/use-toast"
 import { useCart } from "../../hooks/use-cart"
 import { type Book as BookType, getBookTitle, getBookAuthor, getBookDescription } from "../../lib/data"
-import { generateStaticParams } from "@/utils/generateStaticParams";
 
-export { generateStaticParams };
 
 interface BookDetailProps {
   lang: string

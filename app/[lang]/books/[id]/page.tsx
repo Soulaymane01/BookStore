@@ -2,6 +2,9 @@ import { getDictionary } from "../../dictionaries"
 import BookDetail from "./book-detail"
 import { useBookStore, getRelatedBooks } from "../../lib/data"
 import { notFound } from "next/navigation"
+import { generateStaticParams } from "@/utils/generateStaticParams";
+
+export { generateStaticParams };
 
 interface BookPageProps {
   params: { lang: string; id: string }
