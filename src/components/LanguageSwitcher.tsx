@@ -51,7 +51,8 @@ const LanguageSwitcher: React.FC = () => {
       
       {isOpen && (
         <div 
-          className="absolute right-0 mt-2 w-48 max-h-64 overflow-y-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-60"
+        className={`absolute mt-2 w-48 max-h-64 overflow-y-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-60
+          ${document.dir === 'rtl' ? 'left-0 origin-top-left' : 'right-0 origin-top-right'}`}
           role="menu" 
           aria-orientation="vertical"
           aria-labelledby="language-menu"

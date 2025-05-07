@@ -5,38 +5,6 @@ export interface Translations {
 }
 
 export const translations: Translations = {
-  en: {
-    home: "Home",
-    bookCatalog: "Ta3lim distrubucion",
-    search: "Search",
-    price: "Price",
-    description: "Discover our comprehensive collection of educational materials organized by curriculum and category.",
-    noDescription: "No description available.",
-    buyNow: "Buy Now",
-    languageSelector: "Select Language",
-    categories: "Categories",
-    manahige: "Curricula",
-    fiat: "Categories",
-    mostowa: "Levels",
-    books: "Books",
-    noBooks: "No books found",
-    backToHome: "Back to Home",
-    searchPlaceholder: "Search for books...",
-    bookDetails: "Book Details",
-    relatedBooks: "Related Books",
-    viewMore: "View More",
-    allRights: "All Rights Reserved",
-    browseBooks: "Browse Books",
-    exploreMore: "Explore More",
-    categoriesDescription: "Browse through our carefully curated collection of educational materials organized by curriculum",
-    multipleCategories: "Multiple Categories",
-    multipleCategoriesDesc: "Browse through various categories tailored to different learning needs",
-    variousLevels: "Various Levels",
-    variousLevelsDesc: "Find content suitable for different learning stages and abilities",
-    organizedContent: "Organized Content",
-    organizedContentDesc: "Easy navigation through well-structured educational materials",
-    level: "Level"
-  },
   ar: {
     home: "الرئيسية",
     bookCatalog: "التعليم للتوزيع",
@@ -68,6 +36,38 @@ export const translations: Translations = {
     organizedContent: "محتوى منظم",
     organizedContentDesc: "تنقل سهل عبر المواد التعليمية المنظمة بشكل جيد",
     level: "المستوى"
+  },
+  en: {
+    home: "Home",
+    bookCatalog: "Ta3lim distrubucion",
+    search: "Search",
+    price: "Price",
+    description: "Discover our comprehensive collection of educational materials organized by curriculum and category.",
+    noDescription: "No description available.",
+    buyNow: "Buy Now",
+    languageSelector: "Select Language",
+    categories: "Categories",
+    manahige: "Curricula",
+    fiat: "Categories",
+    mostowa: "Levels",
+    books: "Books",
+    noBooks: "No books found",
+    backToHome: "Back to Home",
+    searchPlaceholder: "Search for books...",
+    bookDetails: "Book Details",
+    relatedBooks: "Related Books",
+    viewMore: "View More",
+    allRights: "All Rights Reserved",
+    browseBooks: "Browse Books",
+    exploreMore: "Explore More",
+    categoriesDescription: "Browse through our carefully curated collection of educational materials organized by curriculum",
+    multipleCategories: "Multiple Categories",
+    multipleCategoriesDesc: "Browse through various categories tailored to different learning needs",
+    variousLevels: "Various Levels",
+    variousLevelsDesc: "Find content suitable for different learning stages and abilities",
+    organizedContent: "Organized Content",
+    organizedContentDesc: "Easy navigation through well-structured educational materials",
+    level: "Level"
   },
   es: {
     home: "Inicio",
@@ -175,4 +175,4 @@ export const languages = [
   { code: 'it', name: 'Italiano', dir: 'ltr' }
 ];
 
-export const defaultLanguage = 'en';
+export const defaultLanguage = 'ar';

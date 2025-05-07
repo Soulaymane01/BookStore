@@ -68,20 +68,16 @@ const BookDetailPage: React.FC = () => {
     return book.description || t('noDescription');
   };
 
-  // Format price based on language convention
-  const formatPrice = (price: string) => {
-    if (!price) return '';
-    
-    // Extract numeric value
-    const numericValue = price.replace(/[^\d,.]/g, '');
-    
-    // Different currency formatting based on language
-    if (language === 'ar') {
-      return `${numericValue} €`;
-    } else {
-      return `€${numericValue}`;
-    }
+  const formatPrice = (price: string | number | null | undefined) => {
+    if (price === null || price === undefined) return t('noPrice'); // or return '' if preferred
+    // Convert number to string if needed
+    const priceStr = typeof price === 'number' ? price.toFixed(2) : price;
+    // Extract numeric value from string (preserving comma or dot for decimals)
+    const numericValue = priceStr.replace(/[^\d,.]/g, '');
+    // Format based on language
+    return language === 'ar' ? `${numericValue} €` : `€${numericValue}`;
   };
+  
   
   return (
     <div className="container mx-auto px-4 py-8" dir={dir}>

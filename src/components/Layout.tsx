@@ -5,7 +5,7 @@ import { languages } from '../i18n/translations';
 import LanguageSwitcher from './LanguageSwitcher';
 import SearchBar from './SearchBar';
 import WhatsAppButton from './WhatsAppButton';
-import { BookOpenIcon, HomeIcon, MenuIcon, XIcon } from 'lucide-react';
+import { HomeIcon, MenuIcon, XIcon } from 'lucide-react';
 
 const Layout: React.FC = () => {
   const { t, dir } = useLanguage();
@@ -13,7 +13,7 @@ const Layout: React.FC = () => {
 
   return (
     <div className={`min-h-screen flex flex-col ${dir === 'rtl' ? 'font-[Noto Sans Arabic]' : 'font-[Noto Sans]'}`} dir={dir}>
-      <header className="bg-white shadow-sm sticky top-0 z-10">
+      <header className="bg-white shadow-sm sticky top-0 z-30">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center space-x-2">
@@ -94,6 +94,7 @@ const Layout: React.FC = () => {
               <p className="text-gray-300">
                 © {new Date().getFullYear()} {t('allRights')}
               </p>
+              <p className='relative top-5'> Elidrissinouraddin@gmail.com </p>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">{t('categories')}</h3>
@@ -105,26 +106,26 @@ const Layout: React.FC = () => {
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">{t('languageSelector')}</h3>
-              <div className="space-y-2">
-                {languages.map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => {
-                      const { setLanguage } = useLanguage();
-                      setLanguage(lang.code);
-                    }}
-                    className="block text-gray-300 hover:text-white"
-                  >
-                    {lang.name}
-                  </button>
-                ))}
-              </div>
+              <div className="space-y-2 max-w-[200px] truncate w-full">
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => {
+                    const { setLanguage } = useLanguage();
+                    setLanguage(lang.code);
+                  }}
+                  className="block text-gray-300 hover:text-white w-full text-start"
+                >
+                  {lang.name}
+                </button>
+              ))}
+            </div>
             </div>
           </div>
         </div>
       </footer>
 
-      <WhatsAppButton phoneNumber="1234567890" />
+      <WhatsAppButton/>
     </div>
   );
 };

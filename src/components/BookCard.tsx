@@ -2,13 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Book } from '../data/books';
 import { useLanguage } from '../contexts/LanguageContext';
+import { TagIcon } from 'lucide-react'
 
 interface BookCardProps {
   book: Book;
 }
 
 const BookCard: React.FC<BookCardProps> = ({ book }) => {
-  const { t, dir } = useLanguage();
+  const { t, language, dir } = useLanguage();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
@@ -68,9 +69,10 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
         <div className="flex justify-between items-center mb-3">
           <span className="text-blue-900 font-bold">{book.price}</span>
           {book.mostawa && (
-            <span className="inline-block bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded">
-              {book.mostawa}
-            </span>
+            <span className={`inline-flex items-center bg-emerald-100 text-emerald-800 text-sm px-3 py-1 rounded-full ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
+            <TagIcon className={`w-4 h-4 ${dir === 'rtl' ? 'ml-1' : 'mr-1'}`} />
+            {language === 'ar' ? `المستوى ${book.mostawa.split(' ')[1]}` : book.mostawa}
+          </span>
           )}
         </div>
         <div className="flex justify-between items-center">
