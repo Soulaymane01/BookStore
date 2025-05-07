@@ -47,32 +47,41 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
   if (type === 'manhaj' && imageUrl) {
     return (
       <Link
-        to={url}
-        className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 block h-[550px] w-full"
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent z-10" />
-        <img
-          src={imageUrl}
-          alt={title}
-          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-        />
-        <div className="absolute bottom-0 left-0 right-0 p-8 text-white z-20">
-          <h3 className="text-3xl font-bold mb-4 transform group-hover:translate-x-2 transition-transform duration-300">
-            {title}
-          </h3>
-          {description && (
-            <p className="text-gray-200 mb-6 transform group-hover:translate-x-2 transition-transform duration-300 delay-75">
-              {description}
-            </p>
-          )}
-          <div className="flex items-center text-white transform group-hover:translate-x-4 transition-transform duration-300">
-            <span className="font-medium">Explore More</span>
-            <ChevronIcon className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
-          </div>
+      to={url}
+      className="group block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 bg-white"
+    >
+      {/* Image Section */}
+      <div className="w-full max-w-full">  {/* Container to control image width */}
+        <div className="aspect-w-16 aspect-h-9"> {/* Maintain aspect ratio (adjust as needed) */}
+          <img
+            src={imageUrl}
+            alt={title}
+            className="object-cover w-full h-full"  // Ensure image covers the space
+          />
         </div>
-      </Link>
+      </div>
+
+      {/* Text Section - Below Image */}
+      <div className="relative p-6">
+        <h3 className="text-2xl font-bold mb-3 text-gray-900">
+          {title}
+        </h3>
+        {description && (
+          <p className="text-gray-600 mb-4">
+            {description}
+          </p>
+        )}
+        <span className="inline-flex items-center text-blue-900 font-medium">
+          Explore More
+          <ChevronIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+        </span>
+      </div>
+    </Link>
+
+      
     );
   }
+  
   
   // Original card design for fiat and mostawa
   return (

@@ -7,7 +7,7 @@ export interface Translations {
 export const translations: Translations = {
   en: {
     home: "Home",
-    bookCatalog: "Book Catalog",
+    bookCatalog: "Ta3lim distrubucion",
     search: "Search",
     price: "Price",
     description: "Discover our comprehensive collection of educational materials organized by curriculum and category.",
@@ -39,7 +39,7 @@ export const translations: Translations = {
   },
   ar: {
     home: "الرئيسية",
-    bookCatalog: "فهرس الكتب",
+    bookCatalog: "التعليم للتوزيع",
     search: "بحث",
     price: "السعر",
     description: "اكتشف مجموعتنا الشاملة من المواد التعليمية المنظمة حسب المنهج والفئة",
@@ -71,7 +71,7 @@ export const translations: Translations = {
   },
   es: {
     home: "Inicio",
-    bookCatalog: "Catálogo de Libros",
+    bookCatalog: "Ta3lim distrubucion",
     search: "Buscar",
     price: "Precio",
     description: "Descubre nuestra colección completa de materiales educativos organizados por plan de estudios y categoría",
@@ -103,7 +103,7 @@ export const translations: Translations = {
   },
   pt: {
     home: "Início",
-    bookCatalog: "Catálogo de Livros",
+    bookCatalog: "Ta3lim distrubucion",
     search: "Pesquisar",
     price: "Preço",
     description: "Descubra nossa coleção abrangente de materiais educacionais organizados por currículo e categoria",
@@ -135,7 +135,7 @@ export const translations: Translations = {
   },
   it: {
     home: "Home",
-    bookCatalog: "Catalogo dei Libri",
+    bookCatalog: "Ta3lim distrubucion",
     search: "Cerca",
     price: "Prezzo",
     description: "Scopri la nostra vasta collezione di materiali didattici organizzati per curriculum e categoria",

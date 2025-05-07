@@ -17,8 +17,8 @@ const Layout: React.FC = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <BookOpenIcon className="h-8 w-8 text-blue-900" />
-              <span className="text-xl font-bold text-blue-900">{t('bookCatalog')}</span>
+              <img  src="/logo.png" className="left-0 h-10 w-14 text-blue-900" />
+              <span className="text-[25px] font-bold text-blue-900">{t('bookCatalog')}</span>
             </Link>
             
             <button 
