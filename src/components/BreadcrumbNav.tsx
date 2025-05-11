@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { ChevronRightIcon, ChevronLeftIcon } from 'lucide-react';
-import { getManhajById } from '../data/books';
+import { getManhajById, manahij, getBookBySlug } from '../data/books';
 
 const BreadcrumbNav: React.FC = () => {
   const location = useLocation();
@@ -13,17 +13,39 @@ const BreadcrumbNav: React.FC = () => {
 
   if (paths.length === 0) return null;
 
-  const translatePath = (path: string, type: string) => {
+  const translatePath = (path: string, type: string, isLast: boolean) => {
+    // Handle book slugs (last segment in catalog path)
+    if (isLast && paths[0] === 'book') {
+      const book = getBookBySlug(path);
+  
+      if (!book) return path;
+  
+      const getLocalizedTitle = () => {
+        if (language === 'ar') return book.title;
+        if (language === 'en') return book.title_en || book.title;
+        if (language === 'es') return book.title_es || book.title;
+        if (language === 'pt') return book.title_pt || book.title;
+        if (language === 'it') return book.title_it || book.title;
+        return book.title;
+      };
+  
+      return getLocalizedTitle();
+    }
+
     if (type === 'manhaj') {
-      const manhaj = getManhajById(path);
-      return manhaj ? manhaj.name : path;
+      const manhaj = manahij.find(m => m.id === path);
+      return manhaj?.translations[language as keyof typeof manhaj.translations]?.name || path;
     }
+    
     if (path === 'catalog') return t('categories');
-    if (path === 'book') return t('bookDetails');
+    if (path === 'book') return t('books');
+    
     if (path.startsWith('Level')) {
-      return language === 'ar' ? `المستوى ${path.split(' ')[1]}` : path;
+      const levelNumber = path.split(' ')[1];
+      return t('levelX', { level: levelNumber });
     }
-    return path;
+    
+    return t(path) || path;
   };
 
   return (
@@ -45,7 +67,9 @@ const BreadcrumbNav: React.FC = () => {
           let type = '';
           if (index === 1) type = 'manhaj';
           
-          const label = translatePath(path, type);
+          const decodedPath = decodeURIComponent(path);
+          const label = translatePath(decodedPath, type, isLast);
+
           
           return (
             <React.Fragment key={index}>
@@ -72,4 +96,4 @@ const BreadcrumbNav: React.FC = () => {
   );
 };
 
-export default BreadcrumbNav
+export default BreadcrumbNav;

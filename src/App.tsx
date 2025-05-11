@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import CatalogPage from './pages/CatalogPage';
 import BookDetailPage from './pages/BookDetailPage';
+import AboutUsPage from './pages/AboutUsPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
+            <Route path='/about-us' element={<AboutUsPage />} />
             <Route path="catalog" element={<CatalogPage />} />
             <Route path="catalog/:manhaj" element={<CatalogPage />} />
             <Route path="catalog/:manhaj/:fiat" element={<CatalogPage />} />

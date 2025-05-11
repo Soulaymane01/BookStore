@@ -50,23 +50,33 @@ const BookDetailPage: React.FC = () => {
     if (language === 'ar') {
       return book.title;
     } else if (language === 'en') {
-      return book.translation_en || book.title;
+      return book.title_en || book.title;
     } else if (language === 'es') {
-      return book.translation_es || book.title;
+      return book.title_es || book.title;
     } else if (language === 'pt') {
-      return book.translation_pt || book.title;
+      return book.title_pt || book.title;
     } else if (language === 'it') {
-      return book.translation_it || book.title;
+      return book.title_it || book.title;
     }
     return book.title;
   };
 
-  // Get the localized description (assuming descriptions are in Arabic by default)
+  // Get the translated description based on the current language
   const getLocalizedDescription = () => {
-    // If we had translations for descriptions, we would handle them here
-    // For now, just return the available description
-    return book.description || t('noDescription');
+    if (language === 'ar') {
+      return book.description;
+    } else if (language === 'en') {
+      return book.descreption_en || book.description;
+    } else if (language === 'es') {
+      return book.descreption_es || book.description;
+    } else if (language === 'pt') {
+      return book.descreption_pt || book.description;
+    } else if (language === 'it') {
+      return book.descreption_it || book.description;
+    }
+    return book.description;
   };
+
 
   const formatPrice = (price: string | number | null | undefined) => {
     if (price === null || price === undefined) return t('noPrice'); // or return '' if preferred
@@ -133,7 +143,7 @@ const BookDetailPage: React.FC = () => {
                   className={`inline-flex items-center text-blue-600 hover:text-blue-800 mb-4 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}
                 >
                   <ChevronIcon className={`h-4 w-4 ${dir === 'rtl' ? 'ml-1' : 'mr-1'}`} />
-                  <span>{manhaj.name}</span>
+                  <span>{(manhaj.translations as Record<string, any>)[language]?.name || t('translationMissing')}</span>
                 </Link>
               )}
               <h1 className="text-3xl font-bold mb-4">{getLocalizedTitle()}</h1>
@@ -142,7 +152,7 @@ const BookDetailPage: React.FC = () => {
                 {book.manhaj && manhaj && (
                   <span className={`inline-flex items-center bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
                     <BookOpenIcon className={`w-4 h-4 ${dir === 'rtl' ? 'ml-1' : 'mr-1'}`} />
-                    {manhaj.name}
+                    {(manhaj.translations as Record<string, any>)[language]?.name || t('translationMissing')}
                   </span>
                 )}
                 {book.fiae && (

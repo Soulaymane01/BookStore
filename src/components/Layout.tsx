@@ -86,45 +86,23 @@ const Layout: React.FC = () => {
         <Outlet />
       </main>
       
-      <footer className="bg-gray-800 text-white py-8">
+      <footer className="bg-gray-800 text-white py-6">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">{t('bookCatalog')}</h3>
-              <p className="text-gray-300">
-                © {new Date().getFullYear()} {t('allRights')}
-              </p>
-              <p className='relative top-5'> Elidrissinouraddin@gmail.com </p>
+          <div className="flex flex-col items-center justify-center">
+            <div className="mb-2">
+              {t('bookCatalog')}
+            </div>
+            <div className="mb-2">
+              © {new Date().getFullYear()} {t('allRights')}
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">{t('categories')}</h3>
-              <ul className="space-y-2">
-                <li><Link to="/catalog" className="text-gray-300 hover:text-white">{t('manahige')}</Link></li>
-                <li><Link to="/catalog" className="text-gray-300 hover:text-white">{t('fiat')}</Link></li>
-                <li><Link to="/catalog" className="text-gray-300 hover:text-white">{t('mostowa')}</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">{t('languageSelector')}</h3>
-              <div className="space-y-2 max-w-[200px] truncate w-full">
-              {languages.map((lang) => (
-                <button
-                  key={lang.code}
-                  onClick={() => {
-                    const { setLanguage } = useLanguage();
-                    setLanguage(lang.code);
-                  }}
-                  className="block text-gray-300 hover:text-white w-full text-start"
-                >
-                  {lang.name}
-                </button>
-              ))}
-            </div>
+              <a href="mailto:Elidrissinouraddin@gmail.com" className="text-gray-300 hover:text-white">
+                Elidrissinouraddin@gmail.com
+              </a>
             </div>
           </div>
         </div>
       </footer>
-
       <WhatsAppButton/>
     </div>
   );

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpenIcon, LayersIcon, FolderIcon, ChevronRight as ChevronIcon } from 'lucide-react';
+import { BookOpenIcon, LayersIcon, FolderIcon, ChevronRight as ChevronRightIcon, ChevronLeft as ChevronLeftIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface CategoryCardProps {
   title: string;
@@ -20,6 +21,11 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
   description = '',
   imageUrl = '' 
 }) => {
+  const { t, dir } = useLanguage();
+  const ChevronIcon = dir === 'rtl' ? ChevronLeftIcon : ChevronRightIcon;
+
+  console.log(title)
+
   const getIcon = () => {
     switch (type) {
       case 'manhaj':
@@ -47,41 +53,38 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
   if (type === 'manhaj' && imageUrl) {
     return (
       <Link
-      to={url}
-      className="group block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 bg-white"
-    >
-      {/* Image Section */}
-      <div className="w-full max-w-full">  {/* Container to control image width */}
-        <div className="aspect-w-16 aspect-h-9"> {/* Maintain aspect ratio (adjust as needed) */}
-          <img
-            src={imageUrl}
-            alt={title}
-            className="object-cover w-full h-full"  // Ensure image covers the space
-          />
+        to={url}
+        className="group block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 bg-white"
+      >
+        {/* Image Section */}
+        <div className="w-full max-w-full">
+          <div className="aspect-w-16 aspect-h-9">
+            <img
+              src={imageUrl}
+              alt={title}
+              className="object-cover w-full h-full"
+            />
+          </div>
         </div>
-      </div>
 
-      {/* Text Section - Below Image */}
-      <div className="relative p-6">
-        <h3 className="text-2xl font-bold mb-3 text-gray-900">
-          {title}
-        </h3>
-        {description && (
-          <p className="text-gray-600 mb-4">
-            {description}
-          </p>
-        )}
-        <span className="inline-flex items-center text-blue-900 font-medium">
-          Explore More
-          <ChevronIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-        </span>
-      </div>
-    </Link>
-
-      
+        {/* Text Section - Below Image */}
+        <div className="relative p-6">
+          <h3 className="text-2xl font-bold mb-3 text-gray-900">
+            {title}
+          </h3>
+          {description && (
+            <p className="text-gray-600 mb-4">
+              {description}
+            </p>
+          )}
+          <span className="inline-flex items-center text-blue-900 font-medium">
+            {t('exploreMore')}
+            <ChevronIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+          </span>
+        </div>
+      </Link>
     );
   }
-  
   
   // Original card design for fiat and mostawa
   return (

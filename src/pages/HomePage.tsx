@@ -2,13 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { manahij } from '../data/books';
-import { BookOpenIcon, ChevronRightIcon, ChevronLeftIcon, GraduationCapIcon, LayersIcon, SearchIcon } from 'lucide-react';
+import { BookOpenIcon, ChevronRightIcon, ChevronLeftIcon, GraduationCapIcon, LayersIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
+import AboutUs from '../components/AboutUs';
 
 const HomePage: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
-  const { t, dir } = useLanguage();
+  const { t, language, dir } = useLanguage();
   const ChevronIcon = dir === 'rtl' ? ChevronLeftIcon : ChevronRightIcon;
+
+  console.log(manahij)
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -19,7 +22,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
     <section className="relative min-h-screen flex items-center justify-center py-8 overflow-hidden">
-      {/* Parallax Background Image with enhanced treatment */}
+      {/* Parallax Background Image with enhanced treatment */} 
       <div className="absolute inset-0">
         <motion.div 
           style={{ y: scrollY * 0.2 }}
@@ -61,11 +64,11 @@ const HomePage: React.FC = () => {
         ))}
       </div>
       
-      {/* Curved shapes with enhanced visual treatment */}
+      {/* Curved shapes with enhanced visual treatment - now with responsive fixes */}
       <div className="absolute inset-0 pointer-events-none">
-        {/* Top curved shape with glow and depth */}
-        <div className="absolute -top-24 right-0 w-full">
-          <svg viewBox="0 0 1440 320" className="w-full">
+        {/* Top curved shape with glow and depth - fixed for mobile */}
+        <div className="absolute top-[-6rem] sm:-top-24 right-0 w-full overflow-visible z-10">
+          <svg viewBox="0 0 1440 320" className="w-full h-auto" preserveAspectRatio="none">
             <defs>
               <linearGradient id="topGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="#f43f5e" />
@@ -88,17 +91,13 @@ const HomePage: React.FC = () => {
           </svg>
         </div>
         
-        {/* Bottom curved shapes with enhanced styling */}
-        <div className="absolute bottom-0 left-0 w-full">
-          <svg viewBox="0 0 1440 320" className="w-full">
+        {/* Bottom curved shapes with enhanced styling - fixed for mobile */}
+        <div className="absolute bottom-0 left-0 w-full overflow-visible z-10">
+          <svg viewBox="0 0 1440 320" className="w-full h-auto" preserveAspectRatio="none">
             <defs>
               <linearGradient id="bottomGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stopColor="#e22a32" />
                 <stop offset="100%" stopColor="#f43f5e" />
-              </linearGradient>
-              <linearGradient id="bottomGradient2" x1="100%" y1="0%" x2="0%" y2="0%">
-                <stop offset="0%" stopColor="#e22a32" />
-                <stop offset="100%" stopColor="#c41d25" />
               </linearGradient>
               <filter id="glow2">
                 <feGaussianBlur stdDeviation="5" result="blur" />
@@ -115,7 +114,13 @@ const HomePage: React.FC = () => {
               filter="url(#glow2)"
             />
           </svg>
-          <svg viewBox="0 0 1440 200" className="absolute bottom-0 left-0 w-full">
+          <svg viewBox="0 0 1440 200" className="absolute bottom-0 left-0 w-full h-auto" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="bottomGradient2" x1="100%" y1="0%" x2="0%" y2="0%">
+                <stop offset="0%" stopColor="#e22a32" />
+                <stop offset="100%" stopColor="#c41d25" />
+              </linearGradient>
+            </defs>
             <motion.path 
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
@@ -129,7 +134,7 @@ const HomePage: React.FC = () => {
       </div>
       
       {/* Content with enhanced styling and animations */}
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-20">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -180,7 +185,7 @@ const HomePage: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="font-arabic text-white text-2xl md:text-3xl font-semibold drop-shadow-md"
               >
-                مؤسسة التعليم للتوزيع الإدريسي
+                {t('description_2')}
               </motion.p>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -188,7 +193,7 @@ const HomePage: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="font-arabic text-white/90 text-xl md:text-2xl drop-shadow"
               >
-                متخصصون في الكتب الدراسية لأبناء المهجر
+                {t('description_3')}
               </motion.p>
             </div>
           </motion.div>
@@ -217,6 +222,33 @@ const HomePage: React.FC = () => {
       </div>
     </section>
 
+    <section className="bg-white py-12 px-6 md:px-16 text-center shadow-md">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl font-bold mb-4 text-primary-100">
+      {t('associationsOfferTitle') || 'Special Offer for Associations & Organizations'}
+    </h2>
+    <p className="text-gray-700 text-lg mb-8">
+      {t('associationsOfferText') || 'Associations and organizations can benefit from a dedicated offer tailored to their needs. Just reach out to us to learn more!'}
+    </p>
+    <div className="flex justify-center gap-10 mb-6 flex-wrap">
+      <div className="flex flex-col items-center">
+        <LayersIcon className="w-10 h-10 text-accent-100 mb-2" />
+        <span className="text-sm text-gray-600">{t('customSolutions') || 'Custom Solutions'}</span>
+      </div>
+      <div className="flex flex-col items-center">
+        <GraduationCapIcon className="w-10 h-10 text-accent-100 mb-2" />
+        <span className="text-sm text-gray-600">{t('educationalSupport') || 'Educational Support'}</span>
+      </div>
+      <div className="flex flex-col items-center">
+        <BookOpenIcon className="w-10 h-10 text-accent-100 mb-2" />
+        <span className="text-sm text-gray-600">{t('resourceAccess') || 'Access to Resources'}</span>
+      </div>
+    </div>
+    <Link to="/contact" className="inline-block bg-primary-100 text-white px-6 py-3 rounded-full hover:bg-primary-200 transition">
+      {t('contactUsNow') || 'Contact Us Now'}
+    </Link>
+  </div>
+</section>
 
       {/* Enhanced Categories Grid */}
       <section id="categories" className="container mx-auto px-4 py-24">
@@ -254,7 +286,7 @@ const HomePage: React.FC = () => {
                 <div className="h-64 overflow-hidden">
                   <img
                     src={manhaj.image_url}
-                    alt={manhaj.name}
+                    alt={(manhaj.translations as Record<string, any>)[language]?.name || t('translationMissing')}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
@@ -263,10 +295,10 @@ const HomePage: React.FC = () => {
               {/* Text Section - Below Image */}
               <div className="p-6">
                 <h3 className="text-3xl font-bold mb-4">
-                  {manhaj.name}
+                    {(manhaj.translations as Record<string, any>)[language]?.name || t('translationMissing')}
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  {manhaj.description}
+                    {(manhaj.translations as Record<string, any>)[language]?.description || t('descriptionMissing')}  
                 </p>
                 <div className="flex items-center">
                   <span className="font-medium text-blue-900">{t('exploreMore')}</span>
@@ -278,6 +310,9 @@ const HomePage: React.FC = () => {
         ))}
       </div>
     </section>
+      
+      {/* About Us Section - Added the AboutUs component */}
+      <AboutUs isHomePage={true} />
 
       {/* Enhanced Features Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-24">

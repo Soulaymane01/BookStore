@@ -45,6 +45,22 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
     // Reset to first image when not hovering
     setCurrentImageIndex(0);
   };
+
+  // Get the translated title based on the current language
+  const getLocalizedTitle = () => {
+    if (language === 'ar') {
+      return book.title;
+    } else if (language === 'en') {
+      return book.title_en || book.title;
+    } else if (language === 'es') {
+      return book.title_es || book.title;
+    } else if (language === 'pt') {
+      return book.title_pt || book.title;
+    } else if (language === 'it') {
+      return book.title_it || book.title;
+    }
+    return book.title;
+  };
   
   return (
     <div 
@@ -56,7 +72,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
         <div className="relative aspect-w-3 aspect-h-4">
           <img 
             src={book.image_urls[currentImageIndex] || 'https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=300'} 
-            alt={book.title}
+            alt={getLocalizedTitle()}
             className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
           />
         </div>
@@ -64,7 +80,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
       
       <div className="p-4">
         <Link to={`/book/${book.slug || book.id}`} className="block">
-          <h3 className="text-lg font-medium mb-2 line-clamp-2 hover:text-blue-700 transition-colors">{book.title}</h3>
+          <h3 className="text-lg font-medium mb-2 line-clamp-2 hover:text-blue-700 transition-colors">{getLocalizedTitle()}</h3>
         </Link>
         <div className="flex justify-between items-center mb-3">
           <span className="text-blue-900 font-bold">{book.price}</span>

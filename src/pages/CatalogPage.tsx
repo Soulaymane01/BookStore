@@ -14,11 +14,17 @@ import BreadcrumbNav from '../components/BreadcrumbNav';
 import { motion } from 'framer-motion';
 
 const CatalogPage: React.FC = () => {
+  const { t, language, dir } = useLanguage();
   const { manhaj, fiat } = useParams<{
     manhaj?: string;
     fiat?: string;
   }>();
-  const { t } = useLanguage();
+
+  const getManhajName = (manhajId: string, language: string) => {
+    const manhaj = manahij.find(m => m.id === manhajId);
+    return manhaj?.translations[language as keyof typeof manhaj.translations]?.name || manhajId;
+  };
+
   
     // Display all Manahige (curricula) if no manhaj selected
     if (!manhaj) {
@@ -44,10 +50,10 @@ const CatalogPage: React.FC = () => {
                   transition={{ delay: index * 0.1 }}
                 >
                   <CategoryCard 
-                    title={m.name} 
+                    title={(m.translations as Record<string, any>)[language]?.name || t('translationMissing')}
                     type="manhaj" 
                     url={`/catalog/${m.id}`}
-                    description={m.description}
+                    description={(m.translations as Record<string, any>)[language]?.description || t('descriptionMissing')} 
                     imageUrl={m.image_url}
                   />
                 </motion.div>
@@ -60,6 +66,7 @@ const CatalogPage: React.FC = () => {
   
   // Display books for selected manhaj and fiat
   const currentManhaj = getManhajById(manhaj);
+  console.log(getManhajName(manhaj, language))
   const books = fiat 
     ? getBooksByManhajFiatMostawa(manhaj, fiat)
     : getBooksByManhajFiatMostawa(manhaj);
@@ -79,7 +86,7 @@ const CatalogPage: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 bg-clip-text text-transparent">
-              {currentManhaj?.name || manhaj}
+              {getManhajName(manhaj, language)}
             </h1>
             <p className="text-gray-600 mb-8 text-lg">{t('books')}</p>
             
@@ -109,7 +116,7 @@ const CatalogPage: React.FC = () => {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 bg-clip-text text-transparent">
-            {currentManhaj?.name || manhaj}
+            {getManhajName(manhaj, language)} 
           </h1>
           <p className="text-gray-600 mb-8 text-lg">{t('fiat')}</p>
           
