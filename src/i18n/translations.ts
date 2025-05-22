@@ -53,7 +53,7 @@ export const translations: Translations = {
     curriculaDetail2: "نضعها بين أيديكم كثمرة سنوات من البحث والتطوير، لتكون عونًا لكم في أداء رسالتكم النبيلة.",
     // Offer
     associationsOfferTitle: "عرض خاص للجمعيات والمنظمات",
-    associationsOfferText: "يمكن للجمعيات والمنظمات الاستفادة من عرض مخصص يلبي احتياجاتها. فقط تواصلوا معنا لمعرفة المزيد!",
+    associationsOfferText: "عروض وتخفيضات حصرية للجمعيات والمؤسسات والمراكز الإسلامية",
     customSolutions: "حلول مخصصة",
     educationalSupport: "دعم تعليمي",
     resourceAccess: "الوصول إلى الموارد",
@@ -107,7 +107,7 @@ export const translations: Translations = {
     curriculaDetail2: "We present them to you as the fruit of years of research and development, to assist you in performing your noble mission.",
     // offer 
     associationsOfferTitle: "Special Offer for Associations & Organizations",
-    associationsOfferText: "Associations and organizations can benefit from a dedicated offer tailored to their needs. Just reach out to us to learn more!",
+    associationsOfferText: "Exclusive offers and discounts for Islamic associations, institutions, and centers",
     customSolutions: "Custom Solutions",
     educationalSupport: "Educational Support",
     resourceAccess: "Access to Resources",
@@ -161,7 +161,7 @@ export const translations: Translations = {
     curriculaDetail2: "Se los presentamos como el fruto de años de investigación y desarrollo, para ayudarlos a cumplir con su noble misión.",
     // Offer
     associationsOfferTitle: "Oferta Especial para Asociaciones y Organizaciones",
-    associationsOfferText: "Las asociaciones y organizaciones pueden beneficiarse de una oferta dedicada adaptada a sus necesidades. ¡Solo contáctanos para saber más!",
+    associationsOfferText: "Ofertas y descuentos exclusivos para asociaciones, instituciones y centros islámicos",
     customSolutions: "Soluciones Personalizadas",
     educationalSupport: "Apoyo Educativo",
     resourceAccess: "Acceso a Recursos",
@@ -215,7 +215,7 @@ export const translations: Translations = {
     curriculaDetail2: "Ve li presentiamo come il frutto di anni di ricerca e sviluppo, per assistervi nello svolgimento della vostra nobile missione.",
     // Offer
     associationsOfferTitle: "Oferta Especial para Associações e Organizações",
-    associationsOfferText: "Associações e organizações podem aproveitar uma oferta dedicada adaptada às suas necessidades. Basta entrar em contato conosco para saber mais!",
+    associationsOfferText: "Ofertas e descontos exclusivos para associações, instituições e centros islâmicos",
     customSolutions: "Soluções Personalizadas",
     educationalSupport: "Apoio Educacional",
     resourceAccess: "Acesso a Recursos",
@@ -269,7 +269,7 @@ export const translations: Translations = {
     curriculaDetail2: "Apresentamo-los a você como fruto de anos de pesquisa e desenvolvimento, para auxiliá-lo no desempenho de sua nobre missão.",
     // Offer
     associationsOfferTitle: "Offerta Speciale per Associazioni e Organizzazioni",
-    associationsOfferText: "Associazioni e organizzazioni possono beneficiare di un'offerta dedicata su misura per le loro esigenze. Contattaci per saperne di più!",
+    associationsOfferText: "Offerte e sconti esclusivi per associazioni, istituzioni e centri islamici",
     customSolutions: "Soluzioni Personalizzate",
     educationalSupport: "Supporto Educativo",
     resourceAccess: "Accesso alle Risorse",
