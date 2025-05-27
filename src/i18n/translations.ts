@@ -57,7 +57,8 @@ export const translations: Translations = {
     customSolutions: "حلول مخصصة",
     educationalSupport: "دعم تعليمي",
     resourceAccess: "الوصول إلى الموارد",
-    contactUsNow: "اتصل بنا الآن"
+    contactUsNow: "اتصل بنا الآن",
+    shippingInfo: "الإرسال إلى جميع المناطق بإسبانيا وإيطاليا والبرتغال والعديد من الدول الأوروبية" // Shipping Information
   },
   en: {
     home: "Home",
@@ -111,7 +112,8 @@ export const translations: Translations = {
     customSolutions: "Custom Solutions",
     educationalSupport: "Educational Support",
     resourceAccess: "Access to Resources",
-    contactUsNow: "Contact Us Now"
+    contactUsNow: "Contact Us Now",
+    shippingInfo: "Shipping to all regions in Spain, Italy, Portugal and many European countries" // Shipping 
   },
   es: {
     home: "Inicio",
@@ -165,7 +167,8 @@ export const translations: Translations = {
     customSolutions: "Soluciones Personalizadas",
     educationalSupport: "Apoyo Educativo",
     resourceAccess: "Acceso a Recursos",
-    contactUsNow: "Contáctanos Ahora"
+    contactUsNow: "Contáctanos Ahora",
+    shippingInfo: "Envío a todas las regiones de España, Italia, Portugal y muchos países europeos"
   },
   pt: {
     home: "Início",
@@ -219,7 +222,8 @@ export const translations: Translations = {
     customSolutions: "Soluções Personalizadas",
     educationalSupport: "Apoio Educacional",
     resourceAccess: "Acesso a Recursos",
-    contactUsNow: "Fale Conosco Agora"
+    contactUsNow: "Fale Conosco Agora",
+    shippingInfo: "Entrega para todas as regiões da Espanha, Itália, Portugal e muitos países europeus" // Shipping Information
   },
   it: {
     home: "Home",
@@ -273,7 +277,8 @@ export const translations: Translations = {
     customSolutions: "Soluzioni Personalizzate",
     educationalSupport: "Supporto Educativo",
     resourceAccess: "Accesso alle Risorse",
-    contactUsNow: "Contattaci Ora"
+    contactUsNow: "Contattaci Ora",
+    shippingInfo: "Spediamo in tutte le regioni di Spagna, Italia, Portogallo e molti paesi europei" // Shipping Information
   }
 };
 
