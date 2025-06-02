@@ -62,53 +62,8 @@ const AssociationSection: React.FC = () => {
             />
           </div>
         </div>
-
-        <div className="flex justify-center gap-16 mb-12 flex-wrap">
-          <motion.div
-            className="flex flex-col items-center group"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
-            <div className="w-16 h-16 bg-gradient-to-br from-[#e22a32] to-[#f43f5e] rounded-2xl flex items-center justify-center text-white mb-4 shadow-lg transform group-hover:rotate-6 transition-all duration-300">
-              <LayersIcon className="w-8 h-8" />
-            </div>
-            <span className="text-base text-gray-800 font-medium">{t('customSolutions') || 'Custom Solutions'}</span>
-          </motion.div>
-
-          <motion.div
-            className="flex flex-col items-center group"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
-            <div className="w-16 h-16 bg-gradient-to-br from-[#e22a32] to-[#f43f5e] rounded-2xl flex items-center justify-center text-white mb-4 shadow-lg transform group-hover:rotate-6 transition-all duration-300">
-              <GraduationCapIcon className="w-8 h-8" />
-            </div>
-            <span className="text-base text-gray-800 font-medium">{t('educationalSupport') || 'Educational Support'}</span>
-          </motion.div>
-
-          <motion.div
-            className="flex flex-col items-center group"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
-            <div className="w-16 h-16 bg-gradient-to-br from-[#e22a32] to-[#f43f5e] rounded-2xl flex items-center justify-center text-white mb-4 shadow-lg transform group-hover:rotate-6 transition-all duration-300">
-              <BookOpenIcon className="w-8 h-8" />
-            </div>
-            <span className="text-base text-gray-800 font-medium">{t('resourceAccess') || 'Access to Resources'}</span>
-          </motion.div>
-        </div>
-
-        <motion.div
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          <Link to="/contact" className="inline-block relative overflow-hidden group">
-            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-[#e22a32] to-[#f43f5e] rounded-full"></span>
-            <span className="relative block bg-white text-[#e22a32] font-bold px-8 py-4 rounded-full m-0.5 group-hover:m-1 transition-all duration-300">
-              {t('contactUsNow') || 'Contact Us Now'} →
-            </span>
-          </Link>
-        </motion.div>
+      
+      
       </motion.div>
     </section>
   );

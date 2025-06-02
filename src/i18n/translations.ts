@@ -52,7 +52,7 @@ export const translations: Translations = {
     curriculaDetail1: "اختيارنا للمناهج بني على أسس ومعايير دقيقة ومدروسة.",
     curriculaDetail2: "نضعها بين أيديكم كثمرة سنوات من البحث والتطوير، لتكون عونًا لكم في أداء رسالتكم النبيلة.",
     // Offer
-    associationsOfferTitle: "عرض خاص للجمعيات والمنظمات",
+    associationsOfferTitle: "عرض خاص للجمعيات و المراكز الإسلامية",
     associationsOfferText: "عروض وتخفيضات حصرية للجمعيات والمؤسسات والمراكز الإسلامية",
     customSolutions: "حلول مخصصة",
     educationalSupport: "دعم تعليمي",
@@ -107,7 +107,7 @@ export const translations: Translations = {
     curriculaDetail1: "Our selection of curricula is built on precise and studied principles and standards.",
     curriculaDetail2: "We present them to you as the fruit of years of research and development, to assist you in performing your noble mission.",
     // offer 
-    associationsOfferTitle: "Special Offer for Associations & Organizations",
+    associationsOfferTitle: "Special offer for Islamic associations and centers",
     associationsOfferText: "Exclusive offers and discounts for Islamic associations, institutions, and centers",
     customSolutions: "Custom Solutions",
     educationalSupport: "Educational Support",
@@ -162,7 +162,7 @@ export const translations: Translations = {
     curriculaDetail1: "Nuestra selección de planes de estudio se basa en principios y estándares precisos y estudiados.",
     curriculaDetail2: "Se los presentamos como el fruto de años de investigación y desarrollo, para ayudarlos a cumplir con su noble misión.",
     // Offer
-    associationsOfferTitle: "Oferta Especial para Asociaciones y Organizaciones",
+    associationsOfferTitle: "Oferta especial para asociaciones y centros islámicos",
     associationsOfferText: "Ofertas y descuentos exclusivos para asociaciones, instituciones y centros islámicos",
     customSolutions: "Soluciones Personalizadas",
     educationalSupport: "Apoyo Educativo",
@@ -217,7 +217,7 @@ export const translations: Translations = {
     curriculaDetail1: "La nostra selezione di programmi si basa su principi e standard precisi e studiati.",
     curriculaDetail2: "Ve li presentiamo come il frutto di anni di ricerca e sviluppo, per assistervi nello svolgimento della vostra nobile missione.",
     // Offer
-    associationsOfferTitle: "Oferta Especial para Associações e Organizações",
+    associationsOfferTitle: "Oferta especial para associações e centros islâmicos",
     associationsOfferText: "Ofertas e descontos exclusivos para associações, instituições e centros islâmicos",
     customSolutions: "Soluções Personalizadas",
     educationalSupport: "Apoio Educacional",
@@ -272,7 +272,7 @@ export const translations: Translations = {
     curriculaDetail1: "Nossa seleção de currículos é construída em princípios e padrões precisos e estudados.",
     curriculaDetail2: "Apresentamo-los a você como fruto de anos de pesquisa e desenvolvimento, para auxiliá-lo no desempenho de sua nobre missão.",
     // Offer
-    associationsOfferTitle: "Offerta Speciale per Associazioni e Organizzazioni",
+    associationsOfferTitle: "Offerta speciale per associazioni e centri islamici",
     associationsOfferText: "Offerte e sconti esclusivi per associazioni, istituzioni e centri islamici",
     customSolutions: "Soluzioni Personalizzate",
     educationalSupport: "Supporto Educativo",
