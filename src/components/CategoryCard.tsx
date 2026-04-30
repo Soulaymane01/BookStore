@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpenIcon, LayersIcon, FolderIcon, ChevronRight as ChevronRightIcon, ChevronLeft as ChevronLeftIcon } from 'lucide-react';
+import { BookOpenIcon, LayersIcon, FolderIcon, ArrowRightIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface CategoryCardProps {
   title: string;
-  type: 'manhaj' | 'fiat' | 'mostawa';
+  type: 'manhaj' | 'fiat' | 'subfiat' | 'mostawa';
   count?: number;
   url: string;
   description?: string;
@@ -22,92 +22,108 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
   imageUrl = '' 
 }) => {
   const { t, dir } = useLanguage();
-  const ChevronIcon = dir === 'rtl' ? ChevronLeftIcon : ChevronRightIcon;
-
-  console.log(title)
 
   const getIcon = () => {
     switch (type) {
       case 'manhaj':
-        return <BookOpenIcon className="h-10 w-10 text-blue-900 transform group-hover:rotate-12 transition-transform duration-300" />;
+        return <BookOpenIcon className="h-8 w-8 text-red-600" />;
       case 'fiat':
-        return <FolderIcon className="h-10 w-10 text-amber-600 transform group-hover:rotate-12 transition-transform duration-300" />;
+        return <FolderIcon className="h-8 w-8 text-amber-600" />;
       case 'mostawa':
-        return <LayersIcon className="h-10 w-10 text-emerald-600 transform group-hover:rotate-12 transition-transform duration-300" />;
+        return <LayersIcon className="h-8 w-8 text-emerald-600" />;
       default:
-        return <BookOpenIcon className="h-10 w-10 text-blue-900 transform group-hover:rotate-12 transition-transform duration-300" />;
+        return <BookOpenIcon className="h-8 w-8 text-indigo-600" />;
     }
   };
   
-  const getStyle = () => {
+  const getGradient = () => {
     switch (type) {
       case 'fiat':
-        return 'bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200 hover:shadow-amber-100';
+        return 'from-amber-500/10 to-amber-500/5';
       case 'mostawa':
-        return 'bg-gradient-to-br from-emerald-50 to-emerald-100 border-emerald-200 hover:shadow-emerald-100';
+        return 'from-emerald-500/10 to-emerald-500/5';
       default:
-        return 'bg-gradient-to-br from-gray-50 to-gray-100 border-gray-200 hover:shadow-gray-100';
+        return 'from-red-500/10 to-red-500/5';
     }
   };
-  
+
   if (type === 'manhaj' && imageUrl) {
     return (
-      <Link
-        to={url}
-        className="group block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 bg-white"
+      <motion.div
+        whileHover={{ y: -8 }}
+        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       >
-        {/* Image Section */}
-        <div className="w-full max-w-full">
-          <div className="aspect-w-16 aspect-h-9">
+        <Link
+          to={url}
+          className="group block relative h-[450px] rounded-[2rem] overflow-hidden bg-white shadow-xl hover:shadow-2xl transition-all duration-700"
+        >
+          {/* Image Overlay */}
+          <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
             <img
               src={imageUrl}
               alt={title}
-              className="object-cover w-full h-full"
+              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
             />
           </div>
-        </div>
 
-        {/* Text Section - Below Image */}
-        <div className="relative p-6">
-          <h3 className="text-2xl font-bold mb-3 text-gray-900">
-            {title}
-          </h3>
-          {description && (
-            <p className="text-gray-600 mb-4">
-              {description}
-            </p>
-          )}
-          <span className="inline-flex items-center text-blue-900 font-medium">
-            {t('exploreMore')}
-            <ChevronIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-          </span>
-        </div>
-      </Link>
+          {/* Content */}
+          <div className="absolute inset-0 z-20 p-10 flex flex-col justify-end text-white">
+            <span className="inline-block px-4 py-1 rounded-full bg-white/20 backdrop-blur-md text-[10px] uppercase tracking-widest mb-4 w-fit">
+               {t(type)}
+            </span>
+            <h3 className="text-3xl font-bold mb-4 group-hover:text-red-400 transition-colors">
+              {title}
+            </h3>
+            {description && (
+              <p className="text-white/70 mb-8 line-clamp-2 text-sm leading-relaxed max-w-xs">
+                {description}
+              </p>
+            )}
+            <div className="flex items-center gap-3 font-bold text-sm tracking-widest uppercase">
+               <span>{t('explore')}</span>
+               <ArrowRightIcon className={`w-4 h-4 transform transition-transform group-hover:translate-x-2 ${dir === 'rtl' ? 'rotate-180' : ''}`} />
+            </div>
+          </div>
+        </Link>
+      </motion.div>
     );
   }
   
-  // Original card design for fiat and mostawa
   return (
-    <Link 
-      to={url} 
-      className={`group block p-6 rounded-2xl border-2 ${getStyle()} transition-all duration-300 hover:shadow-xl hover:-translate-y-1`}
+    <motion.div
+      whileHover={{ scale: 1.02 }}
+      transition={{ duration: 0.4 }}
     >
-      <div className="flex items-center">
-        <div className="mr-4">
-          {getIcon()}
+      <Link 
+        to={url} 
+        className={`group block relative p-1 rounded-[2rem] overflow-hidden`}
+      >
+        <div className={`absolute inset-0 bg-gradient-to-br ${getGradient()} opacity-100 group-hover:opacity-100 transition-opacity duration-500`} />
+        
+        <div className="relative glass-effect p-8 rounded-[1.9rem] flex items-center justify-between border-white/40">
+          <div className="flex items-center gap-6">
+            <div className={`p-4 rounded-2xl bg-white shadow-sm group-hover:shadow-md transition-all`}>
+              {getIcon()}
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-1">
+                {title}
+              </h3>
+              {count > 0 && (
+                <p className="text-xs text-gray-500 font-medium uppercase tracking-wider">
+                  {count} {count === 1 ? t('item') : t('items')}
+                </p>
+              )}
+            </div>
+          </div>
+          
+          <div className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center group-hover:bg-gray-900 group-hover:text-white group-hover:border-gray-900 transition-all duration-300">
+             <ArrowRightIcon className={`w-4 h-4 ${dir === 'rtl' ? 'rotate-180' : ''}`} />
+          </div>
         </div>
-        <div>
-          <h3 className="text-xl font-semibold mb-1 group-hover:text-blue-900 transition-colors duration-300">
-            {title}
-          </h3>
-          {count > 0 && (
-            <p className="text-sm text-gray-600 group-hover:text-gray-900 transition-colors duration-300">
-              {count} {count === 1 ? 'item' : 'items'}
-            </p>
-          )}
-        </div>
-      </div>
-    </Link>
+      </Link>
+    </motion.div>
   );
 };
 

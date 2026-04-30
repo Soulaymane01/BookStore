@@ -2,9 +2,13 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { ChevronRightIcon, ChevronLeftIcon } from 'lucide-react';
-import { getManhajById, manahij, getBookBySlug } from '../data/books';
+import { manahij, getBookBySlug } from '../data/books';
 
-const BreadcrumbNav: React.FC = () => {
+interface BreadcrumbNavProps {
+  light?: boolean;
+}
+
+const BreadcrumbNav: React.FC<BreadcrumbNavProps> = ({ light = false }) => {
   const location = useLocation();
   const { t, dir, language } = useLanguage();
   
@@ -14,12 +18,9 @@ const BreadcrumbNav: React.FC = () => {
   if (paths.length === 0) return null;
 
   const translatePath = (path: string, type: string, isLast: boolean) => {
-    // Handle book slugs (last segment in catalog path)
     if (isLast && paths[0] === 'book') {
       const book = getBookBySlug(path);
-  
       if (!book) return path;
-  
       const getLocalizedTitle = () => {
         if (language === 'ar') return book.title;
         if (language === 'en') return book.title_en || book.title;
@@ -28,7 +29,6 @@ const BreadcrumbNav: React.FC = () => {
         if (language === 'it') return book.title_it || book.title;
         return book.title;
       };
-  
       return getLocalizedTitle();
     }
 
@@ -39,22 +39,22 @@ const BreadcrumbNav: React.FC = () => {
     
     if (path === 'catalog') return t('categories');
     if (path === 'book') return t('books');
-    
-    if (path.startsWith('Level')) {
-      const levelNumber = path.split(' ')[1];
-      return t('levelX', { level: levelNumber });
-    }
+    if (path === 'about-us') return t('aboutUs');
     
     return t(path) || path;
   };
 
+  const textColor = light ? 'text-white/40' : 'text-gray-400';
+  const activeColor = light ? 'text-white' : 'text-gray-900';
+  const hoverColor = light ? 'hover:text-white/80' : 'hover:text-red-600';
+
   return (
-    <nav className="text-sm my-6 bg-white shadow-sm rounded-lg p-4">
+    <nav className="text-xs uppercase tracking-widest font-bold mb-8">
       <ol className="flex flex-wrap items-center">
         <li>
           <Link 
             to="/" 
-            className="text-gray-500 hover:text-blue-900 flex items-center"
+            className={`${textColor} ${hoverColor} transition-colors`}
           >
             {t('home')}
           </Link>
@@ -70,19 +70,18 @@ const BreadcrumbNav: React.FC = () => {
           const decodedPath = decodeURIComponent(path);
           const label = translatePath(decodedPath, type, isLast);
 
-          
           return (
             <React.Fragment key={index}>
-              <li className="mx-2 text-gray-400">
-                <ChevronIcon className="h-4 w-4" />
+              <li className={`mx-3 ${textColor}`}>
+                <ChevronIcon className="h-3 w-3" />
               </li>
               <li>
                 {isLast ? (
-                  <span className="text-blue-900 font-medium">{label}</span>
+                  <span className={`${activeColor}`}>{label}</span>
                 ) : (
                   <Link 
                     to={url} 
-                    className="text-gray-500 hover:text-blue-900 flex items-center"
+                    className={`${textColor} ${hoverColor} transition-colors`}
                   >
                     {label}
                   </Link>

@@ -1,4 +1,5 @@
 import rawBooks from './books.json';
+import scrapedAafBooks from './arabicforall_data.json';
 
 export interface Manhaj {
   id: string;
@@ -36,14 +37,16 @@ export interface Book {
   product_url: string;
   manhaj: string;             // should match one of the `Manhaj.id` values
   fiae: string;               // field/subject (example: اللغة العربية)
+  subfiat?: string;           // sub-category (example: الابتدائي)
   mostawa: string;            // level (example: Level 1)
   slug: string;               // used for routing/search
+  [key: string]: any;         // allows dynamic translation fields like title_en
 }
 
 export const manahij: Manhaj[] = [
     {
       id: "curankareem",
-      image_url: "/curriculum/Curan-kareem.png",
+      image_url: "/curriculum/Curan-kareem.jpeg",
       translations: {
         ar: {
           name: "القرآن الكريم",
@@ -69,7 +72,7 @@ export const manahij: Manhaj[] = [
     },
     {
       id: "tasismotakamil",
-      image_url: "/curriculum/جميع-كتب-سلسلة-التأسيس-المتكامل-.webp",
+      image_url: "/curriculum/جميع-كتب-سلسلة-التأسيس-المتكامل-.jpeg",
       translations: {
         ar: {
           name: "تأسيس متكامل",
@@ -96,7 +99,7 @@ export const manahij: Manhaj[] = [
 ,
     {
       id: "arabicforall",
-      image_url: "/curriculum/arabic-for-all.png",
+      image_url: "/curriculum/arabic-for-all.jpeg",
       translations: {
         ar: {
           name: "العربية للجميع",
@@ -122,7 +125,7 @@ export const manahij: Manhaj[] = [
     },
     {
       id: "Sanabel",
-      image_url: "/curriculum/logo-sanabel.png",
+      image_url: "/curriculum/logo-sanabel.jpeg",
       translations: {
         ar: {
           name: "سنابل",
@@ -162,10 +165,25 @@ function safeParseImages(input: any): string[] {
 }
 
 
-export const books: Book[] = rawBooks.map(book => ({
-  ...book,
-  image_urls: safeParseImages(book.image_urls)
-}));
+const parsedBooks: Book[] = (rawBooks as unknown as Book[]).map(book => {
+  let subfiat = book.subfiat;
+  let fiae = book.fiae;
+  
+  if (book.manhaj === "Sanabel" && fiae === "تعليم اللغة العربية") {
+    if (book.title.match(/ثانوي|إعدادي|اعدادي/)) subfiat = "الاعدادي";
+    else if (book.title.match(/محو|كبار|الكبار|الوحدة/)) subfiat = "محو الامية";
+    else subfiat = "الابتدائي";
+  }
+
+  if (book.manhaj === "arabicforall") {
+    if (book.title.includes("بين يديك")) fiae = "العربية بين يديك";
+    else fiae = "العربية بين أيدي أولادنا";
+  }
+
+  return { ...book, subfiat, fiae, image_urls: safeParseImages(book.image_urls) };
+}).filter(b => b.manhaj !== "arabicforall"); // clear old ones to inject pristine
+
+export const books: Book[] = [...parsedBooks, ...scrapedAafBooks as unknown as Book[]];
 
 
 // Helper functions
@@ -182,14 +200,20 @@ export const getFiatByManhaj = (manhaj: string): string[] => {
   return [...new Set(books.filter(book => book.manhaj === manhaj).map(book => book.fiae))].filter(Boolean);
 };
 
+export const getSubfiatsByManhajAndFiat = (manhaj: string, fiat: string): string[] => {
+  return [...new Set(books.filter(book => book.manhaj === manhaj && book.fiae === fiat && book.subfiat).map(book => book.subfiat as string))].filter(Boolean);
+};
+
 export const getMostawaByManhajAndFiat = (manhaj: string, fiat: string): string[] => {
   return [...new Set(books.filter(book => book.manhaj === manhaj && book.fiae === fiat).map(book => book.mostawa))].filter(Boolean);
 };
 
-export const getBooksByManhajFiatMostawa = (manhaj: string, fiat: string = "", mostawa: string = ""): Book[] => {
+export const getBooksByManhajFiatSubfiatMostawa = (manhaj: string, fiat: string = "", subfiat: string = "", mostawa: string = ""): Book[] => {
   return books.filter(book => {
-    if (manhaj && fiat && mostawa) {
-      return book.manhaj === manhaj && book.fiae === fiat && book.mostawa === mostawa;
+    if (manhaj && fiat && subfiat && mostawa) {
+      return book.manhaj === manhaj && book.fiae === fiat && book.subfiat === subfiat && book.mostawa === mostawa;
+    } else if (manhaj && fiat && subfiat) {
+      return book.manhaj === manhaj && book.fiae === fiat && book.subfiat === subfiat;
     } else if (manhaj && fiat) {
       return book.manhaj === manhaj && book.fiae === fiat;
     } else if (manhaj) {
@@ -203,15 +227,53 @@ export const getBookBySlug = (slug: string): Book | undefined => {
   return books.find(book => book.slug === slug || book.id === slug);
 };
 
+/**
+ * Normalizes Arabic text by removing Tashkeel and normalizing variations of Alif, Yeh, and Teh Marbuta.
+ */
+const normalizeText = (text: string): string => {
+  if (!text) return "";
+  return text
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // Remove accents/diacritics
+    // Arabic specific normalization
+    .replace(/[\u064B-\u0652]/g, "") // Remove Tashkeel (Fatha, Damma, etc.)
+    .replace(/[أإآ]/g, "ا")
+    .replace(/[ة]/g, "ه")
+    .replace(/[ى]/g, "ي")
+    .replace(/[ؤ]/g, "و")
+    .replace(/[ئ]/g, "ي");
+};
+
 export const searchBooks = (query: string): Book[] => {
-  const searchTerm = query.toLowerCase();
-  return books.filter(book => 
-    book.title.toLowerCase().includes(searchTerm) ||
-    book.description.toLowerCase().includes(searchTerm) ||
-    book.manhaj.toLowerCase().includes(searchTerm) ||
-    book.fiae.toLowerCase().includes(searchTerm) ||
-    book.mostawa.toLowerCase().includes(searchTerm)
-  );
+  if (!query) return [];
+  
+  const normalizedQuery = normalizeText(query);
+  if (!normalizedQuery) return [];
+
+  return books.filter(book => {
+    // Fields to search in
+    const searchFields = [
+      book.title,
+      (book as any).title_en,
+      (book as any).title_ar,
+      book.description,
+      (book as any).description_en,
+      (book as any).description_ar,
+      book.manhaj,
+      book.fiae,
+      book.mostawa,
+      book.slug,
+      book.id
+    ];
+
+    return searchFields.some(field => {
+      if (!field) return false;
+      const normalizedField = normalizeText(String(field));
+      return normalizedField.includes(normalizedQuery);
+    });
+  });
 };
 
 

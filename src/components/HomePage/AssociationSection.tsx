@@ -1,72 +1,93 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
-import { LayersIcon, GraduationCapIcon, BookOpenIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { GiftIcon } from 'lucide-react';
 
 const AssociationSection: React.FC = () => {
   const { t } = useLanguage();
-
   return (
-    <section className="relative py-20 px-6 md:px-16 text-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-gray-50 to-white"></div>
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-0 w-full h-full">
-          {[...Array(20)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute rounded-full bg-primary-100"
-              style={{
-                width: Math.random() * 300 + 50 + 'px',
-                height: Math.random() * 300 + 50 + 'px',
-                top: Math.random() * 100 + '%',
-                left: Math.random() * 100 + '%',
-                opacity: Math.random() * 0.1,
-                transform: `scale(${Math.random() * 0.6 + 0.4})`
-              }}
-            ></div>
-          ))}
-        </div>
-      </div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8 }}
-        className="max-w-4xl mx-auto relative z-10"
-      >
-        <div className="md:grid md:grid-cols-2 md:gap-12 items-center mb-12">
-          {/* Text Content */}
-          <div>
-            <div className="inline-block mb-6">
-              <div className="h-1 w-24 bg-gradient-to-r from-[#e22a32] to-[#f43f5e] mx-auto"></div>
-              <h2 className="text-4xl font-bold mt-6 mb-2 bg-gradient-to-r from-[#e22a32] to-[#f43f5e] bg-clip-text text-transparent">
-                {t('associationsOfferTitle') || 'Special Offer for Associations & Organizations'}
+    <section className="relative py-32 overflow-hidden bg-gray-50/50">
+      <div className="container mx-auto px-4 relative z-10">
+        <motion.div
+           initial={{ opacity: 0, scale: 0.95 }}
+           whileInView={{ opacity: 1, scale: 1 }}
+           viewport={{ once: true }}
+           transition={{ duration: 1 }}
+           className="relative max-w-6xl mx-auto"
+        >
+          {/* Card Wrapper with Glow */}
+          <div className="absolute -inset-4 bg-gradient-to-r from-red-600/20 to-amber-600/20 rounded-[3rem] blur-3xl opacity-50 group-hover:opacity-100 transition-opacity" />
+          
+          <div className="relative glass-effect rounded-[3rem] border border-white/40 p-8 md:p-16 shadow-2xl overflow-hidden min-h-[600px] flex flex-col md:flex-row items-center gap-12">
+            
+            {/* Left Content */}
+            <div className="flex-1 text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 text-red-600 text-sm font-bold mb-8 uppercase tracking-widest">
+                <GiftIcon className="w-4 h-4" />
+                {t('exclusiveOffer')}
+              </div>
+              <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+                {t('associationsOfferTitle')}
               </h2>
-              <div className="h-1 w-24 bg-gradient-to-r from-[#f43f5e] to-[#e22a32] mx-auto"></div>
+              <p className="text-gray-500 text-xl leading-relaxed mb-10 max-w-xl">
+                 {t('associationsOfferTextLong')}
+              </p>
+              
+              <div className="flex flex-wrap gap-4">
+                 <a 
+                   href="https://wa.me/34632694983" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   className="px-10 py-5 rounded-2xl bg-gray-900 text-white font-bold hover:bg-red-600 transition-all premium-shadow flex items-center gap-3"
+                 >
+                   {t('contactUsNow')}
+                   <ArrowRightIcon className="w-5 h-5" />
+                 </a>
+              </div>
             </div>
 
-            <p className="text-gray-700 text-lg">
-              {t('associationsOfferText') || 'Associations and organizations can benefit from a dedicated offer tailored to their needs. Just reach out to us to learn more!'}
-            </p>
+            {/* Right Image/Poster */}
+            <div className="flex-1 relative group">
+              <motion.div
+                whileHover={{ rotateY: 10, rotateX: -5 }}
+                transition={{ type: 'spring', stiffness: 100 }}
+                className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white"
+              >
+                <img
+                  src="/Deals.jpeg"
+                  alt="Special Deals"
+                  className="w-full h-auto object-cover"
+                />
+              </motion.div>
+              {/* Floating accents */}
+              <div className="absolute -top-10 -right-10 w-24 h-24 bg-red-600 rounded-full blur-2xl opacity-20" />
+              <div className="absolute -bottom-10 -left-10 w-24 h-24 bg-amber-600 rounded-full blur-2xl opacity-20" />
+            </div>
           </div>
-
-          {/* Image Section */}
-          <div className="mt-8 md:mt-0 rounded-xl overflow-hidden shadow-xl">
-            <img
-              src="/Deals.png"  // Update with your image path
-              alt="Association Deals offer"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      
-      
-      </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 };
+
+// Internal ArrowIcon because lucide import was missing in previous thought's check
+const ArrowRightIcon = ({ className }: { className?: string }) => {
+    const { dir } = useLanguage();
+    return (
+        <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="2" 
+            strokeLinecap="round" 
+            strokeLinejoin="round" 
+            className={`${className} ${dir === 'rtl' ? 'rotate-180' : ''}`}
+        >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+    )
+}
 
 export default AssociationSection;

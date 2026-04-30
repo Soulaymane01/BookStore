@@ -2,71 +2,101 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { manahij } from '../../data/books';
-import { ChevronRightIcon, ChevronLeftIcon } from 'lucide-react';
+import { ArrowRightIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const CategoriesSection: React.FC = () => {
   const { t, language, dir } = useLanguage();
-  const ChevronIcon = dir === 'rtl' ? ChevronLeftIcon : ChevronRightIcon;
 
   return (
-    <section id="categories" className="container mx-auto px-4 py-24">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-        className="text-center mb-16"
-      >
-        <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-[#e22a32]/80 via-[#e22a32]/70 to-[#e22a32]/90 bg-clip-text text-transparent">
-          {t('categories')}
-        </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-          {t('categoriesDescription')}
-        </p>
-      </motion.div>
+    <section id="categories" className="py-32 bg-white relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-50 -mr-48 -mt-48" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-amber-50 rounded-full blur-3xl opacity-50 -ml-48 -mb-48" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-        {manahij.map((manhaj, index) => (
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <motion.div
-            key={manhaj.id}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: index * 0.2 }}
-            className="h-[400px]" // ADD THIS: Fixed height of 400px (adjust as needed)
+            transition={{ duration: 0.8 }}
+            className="max-w-2xl"
           >
-            <Link
-              to={`/catalog/${manhaj.id}`}
-              className="group block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 bg-white"
+            <h2 className="text-sm uppercase tracking-[0.3em] text-red-600 font-bold mb-4">
+              {t('curatedCollections')}
+            </h2>
+            <h3 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+              {t('categoriesTitle')}
+            </h3>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <p className="text-gray-500 text-lg max-w-sm mb-0">
+              {t('categoriesDescriptionLong')}
+            </p>
+          </motion.div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {manahij.map((manhaj, index) => (
+            <motion.div
+              key={manhaj.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.2, duration: 0.8 }}
             >
-              {/* Image Section */}
-              <div className="w-full">
-                <div className="h-64 overflow-hidden">
-                  <img
+              <Link
+                to={`/catalog/${manhaj.id}`}
+                className="group block relative h-[500px] rounded-[2.5rem] overflow-hidden bg-gray-100 shadow-2xl transition-all duration-700 hover:shadow-red-900/10"
+              >
+                {/* Background Image with Hover Scaling */}
+                <div className="absolute inset-0 transition-transform duration-1000 group-hover:scale-110">
+                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
+                   <img
                     src={manhaj.image_url}
-                    alt={(manhaj.translations as Record<string, any>)[language]?.name || t('translationMissing')}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    alt={manhaj.id}
+                    className="w-full h-full object-cover"
                   />
                 </div>
-              </div>
 
-              {/* Text Section - Below Image */}
-              <div className="p-6">
-                <h3 className="text-3xl font-bold mb-4">
-                  {(manhaj.translations as Record<string, any>)[language]?.name || t('translationMissing')}
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  {(manhaj.translations as Record<string, any>)[language]?.description || t('descriptionMissing')}
-                </p>
-                <div className="flex items-center">
-                  <span className="font-medium text-blue-900">{t('exploreMore')}</span>
-                  <ChevronIcon className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
+                {/* Content Overlay */}
+                <div className="absolute inset-0 z-20 p-12 flex flex-col justify-end text-white">
+                  <motion.div 
+                    initial={false}
+                    animate={{ y: 0 }}
+                    className="transform transition-transform duration-500 group-hover:-translate-y-4"
+                  >
+                    <span className="inline-block px-4 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs uppercase tracking-widest mb-6 px-10">
+                      {(manhaj.translations as any)[language]?.type || 'Curriculum'}
+                    </span>
+                    <h4 className="text-4xl md:text-5xl font-bold mb-6">
+                      {(manhaj.translations as any)[language]?.name}
+                    </h4>
+                    <p className="text-white/70 max-w-sm line-clamp-2 md:text-lg mb-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      {(manhaj.translations as any)[language]?.description}
+                    </p>
+                    
+                    <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center transition-all duration-500 group-hover:w-32 group-hover:rounded-2xl overflow-hidden">
+                            <span className="absolute whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity delay-200 font-bold uppercase tracking-widest text-xs ml-[-1rem]">
+                                {t('explore')}
+                            </span>
+                            <ArrowRightIcon className={`w-5 h-5 transition-all duration-500 ${dir === 'rtl' ? 'rotate-180' : ''} group-hover:ml-12`} />
+                        </div>
+                    </div>
+                  </motion.div>
                 </div>
-              </div>
-            </Link>
-          </motion.div>
-        ))}
+              </Link>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

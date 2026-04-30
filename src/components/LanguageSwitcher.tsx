@@ -1,81 +1,66 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { languages } from '../i18n/translations';
-import { Globe } from 'lucide-react';
+import { Globe, CheckIcon } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const LanguageSwitcher: React.FC = () => {
-  const { language, setLanguage, t } = useLanguage();
+  const { language, setLanguage, t, dir } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     };
-
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Handle keyboard navigation
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Escape') {
-      setIsOpen(false);
-    }
-  };
-
-  // Get current language name
-  const currentLangName = languages.find(lang => lang.code === language)?.name || language;
-
-  // Handle language change
-  const handleLanguageChange = (langCode: string) => {
-    setLanguage(langCode);
-    setIsOpen(false);
-  };
+  const currentLang = languages.find(lang => lang.code === language);
 
   return (
-    <div className="relative" ref={dropdownRef} onKeyDown={handleKeyDown}>
+    <div className="relative" ref={dropdownRef}>
       <button 
-        className="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
-        aria-label={t('languageSelector')}
-        aria-expanded={isOpen}
-        aria-haspopup="true"
         onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white/50 backdrop-blur-md border border-white/40 shadow-sm hover:bg-white transition-all text-xs font-bold uppercase tracking-widest text-gray-900"
       >
-        <Globe size={18} className="text-gray-600" />
-        <span>{currentLangName}</span>
+        <Globe size={16} className="text-red-500" />
+        <span>{currentLang?.code}</span>
       </button>
       
-      {isOpen && (
-        <div 
-        className={`absolute mt-2 w-48 max-h-64 overflow-y-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-60
-          ${document.dir === 'rtl' ? 'left-0 origin-top-left' : 'right-0 origin-top-right'}`}
-          role="menu" 
-          aria-orientation="vertical"
-          aria-labelledby="language-menu"
-        >
-          <div className="py-1">
-            {languages.map((lang) => (
-              <button
-                key={lang.code}
-                onClick={() => handleLanguageChange(lang.code)}
-                className={`w-full text-left px-4 py-2 text-sm ${
-                  language === lang.code
-                    ? 'bg-blue-50 text-blue-600 font-medium'
-                    : 'text-gray-700 hover:bg-gray-50'
-                }`}
-                role="menuitem"
-                aria-current={language === lang.code ? "true" : "false"}
-              >
-                {lang.name}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div 
+            initial={{ opacity: 0, y: 10, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 10, scale: 0.95 }}
+            className={`absolute mt-4 w-48 glass-effect border border-white/40 rounded-[2rem] shadow-2xl overflow-hidden z-[70] ${dir === 'rtl' ? 'left-0' : 'right-0'}`}
+          >
+            <div className="py-4">
+              <div className="px-6 py-2 mb-2">
+                 <span className="text-[10px] uppercase tracking-widest font-black text-gray-400">{t('selectLanguage')}</span>
+              </div>
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => { setLanguage(lang.code); setIsOpen(false); }}
+                  className={`w-full flex items-center justify-between px-6 py-3 text-xs font-bold uppercase tracking-widest transition-colors ${
+                    language === lang.code
+                      ? 'text-red-600 bg-red-50/50'
+                      : 'text-gray-600 hover:bg-white/40'
+                  }`}
+                >
+                  {lang.name}
+                  {language === lang.code && <CheckIcon className="w-3 h-3" />}
+                </button>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

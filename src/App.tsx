@@ -18,7 +18,8 @@ function App() {
             <Route path="catalog" element={<CatalogPage />} />
             <Route path="catalog/:manhaj" element={<CatalogPage />} />
             <Route path="catalog/:manhaj/:fiat" element={<CatalogPage />} />
-            <Route path="catalog/:manhaj/:fiat/:mostawa" element={<CatalogPage />} />
+            <Route path="catalog/:manhaj/:fiat/:subfiat" element={<CatalogPage />} />
+            <Route path="catalog/:manhaj/:fiat/:subfiat/:mostawa" element={<CatalogPage />} />
             <Route path="book/:slug" element={<BookDetailPage />} />
           </Route>
         </Routes>

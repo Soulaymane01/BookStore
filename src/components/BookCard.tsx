@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Book } from '../data/books';
 import { useLanguage } from '../contexts/LanguageContext';
-import { TagIcon } from 'lucide-react'
+import { Book } from '../data/books';
+import { ShoppingCartIcon, ArrowRightIcon } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 interface BookCardProps {
   book: Book;
@@ -10,97 +11,63 @@ interface BookCardProps {
 
 const BookCard: React.FC<BookCardProps> = ({ book }) => {
   const { t, language, dir } = useLanguage();
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isHovering, setIsHovering] = useState(false);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
-  
-  // Handle image cycling on hover
-  useEffect(() => {
-    if (isHovering && book.image_urls.length > 1) {
-      timerRef.current = setInterval(() => {
-        setCurrentImageIndex((prev) => 
-          prev === book.image_urls.length - 1 ? 0 : prev + 1
-        );
-      }, 1500); // Change image every 1.5 seconds
-    } else {
-      if (timerRef.current) {
-        clearInterval(timerRef.current);
-      }
-    }
-    
-    // Cleanup function
-    return () => {
-      if (timerRef.current) {
-        clearInterval(timerRef.current);
-      }
-    };
-  }, [isHovering, book.image_urls.length]);
-  
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-  };
-  
-  const handleMouseLeave = () => {
-    setIsHovering(false);
-    // Reset to first image when not hovering
-    setCurrentImageIndex(0);
-  };
 
-  // Get the translated title based on the current language
-  const getLocalizedTitle = () => {
-    if (language === 'ar') {
-      return book.title;
-    } else if (language === 'en') {
-      return book.title_en || book.title;
-    } else if (language === 'es') {
-      return book.title_es || book.title;
-    } else if (language === 'pt') {
-      return book.title_pt || book.title;
-    } else if (language === 'it') {
-      return book.title_it || book.title;
-    }
-    return book.title;
-  };
-  
   return (
-    <div 
-      className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+    <motion.div
+      whileHover={{ y: -10 }}
+      className="group bg-white rounded-[2rem] overflow-hidden border border-gray-100/50 shadow-sm hover:shadow-2xl transition-all duration-500 relative"
     >
-      <Link to={`/book/${book.slug || book.id}`} className="block">
-        <div className="relative aspect-w-3 aspect-h-4">
-          <img 
-            src={book.image_urls[currentImageIndex] || 'https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=300'} 
-            alt={getLocalizedTitle()}
-            className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+      {/* Perspective Image Container */}
+      <div className="relative h-[320px] overflow-hidden bg-[#f8fafc] flex items-center justify-center p-8">
+        <Link to={`/book/${book.slug}`} className="relative z-10 w-full h-full perspective-1000">
+          <motion.img
+            src={book.image_urls[0] || '/placeholder-book.png'}
+            alt={book.title}
+            className="w-full h-full object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.2)] transform transition-all duration-500 group-hover:scale-105 group-hover:rotate-2"
           />
-        </div>
-      </Link>
-      
-      <div className="p-4">
-        <Link to={`/book/${book.slug || book.id}`} className="block">
-          <h3 className="text-lg font-medium mb-2 line-clamp-2 hover:text-blue-700 transition-colors">{getLocalizedTitle()}</h3>
         </Link>
-        <div className="flex justify-between items-center mb-3">
-          <span className="text-blue-900 font-bold">{book.price}</span>
-          {book.mostawa && (
-            <span className={`inline-flex items-center bg-emerald-100 text-emerald-800 text-sm px-3 py-1 rounded-full ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
-            <TagIcon className={`w-4 h-4 ${dir === 'rtl' ? 'ml-1' : 'mr-1'}`} />
-            {language === 'ar' ? `المستوى ${book.mostawa.split(' ')[1]}` : book.mostawa}
+        
+        {/* Glow Effect on Hover */}
+        <div className="absolute inset-0 bg-gradient-to-br from-red-500/0 via-red-500/0 to-red-500/0 group-hover:from-red-500/5 group-hover:via-transparent group-hover:to-transparent transition-all duration-700" />
+      </div>
+
+      {/* Content Area */}
+      <div className="p-8">
+        <div className="flex items-center gap-2 mb-3">
+          <span className="text-[10px] uppercase tracking-widest font-bold text-red-600 bg-red-50 px-3 py-1 rounded-full">
+            {book.mostawa || 'General'}
           </span>
-          )}
         </div>
-        <div className="flex justify-between items-center">
+        
+        <Link to={`/book/${book.slug}`}>
+          <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 min-h-[3.5rem] group-hover:text-red-600 transition-colors">
+            {/* Localized Title Logic */}
+            {(book as any)[`title_${language}`] || (language === 'ar' ? book.title : ((book as any).title_en || book.title))}
+          </h3>
+        </Link>
+        
+        <div className="flex items-center justify-between mt-6 pt-6 border-t border-gray-50">
+          <div className="flex flex-col">
+            <span className="text-xs text-gray-400 uppercase tracking-wider">{t('price')}</span>
+            <span className="text-2xl font-black text-gray-900">
+               {book.price}€
+            </span>
+          </div>
+          
           <Link 
-            to={`/book/${book.slug || book.id}`}
-            className="text-sm text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+            to={`/book/${book.slug}`}
+            className="w-12 h-12 rounded-2xl bg-gray-900 text-white flex items-center justify-center translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 hover:bg-red-600"
           >
-            {t('viewMore')}
+            <ArrowRightIcon className={`w-5 h-5 ${dir === 'rtl' ? 'rotate-180' : ''}`} />
           </Link>
         </div>
       </div>
-    </div>
+      
+      {/* Quick Action Overlay */}
+      <div className="absolute top-4 right-4 z-20">
+         {/* Could add a wishlist feature icon here */}
+      </div>
+    </motion.div>
   );
 };
 
