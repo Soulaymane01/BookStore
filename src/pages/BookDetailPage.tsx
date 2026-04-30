@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const BookDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { t, language, dir } = useLanguage();
+  const { t, language } = useLanguage();
   
   const book = slug ? getBookBySlug(slug) : null;
   const manhaj = book ? getManhajById(book.manhaj) : null;
@@ -38,13 +38,38 @@ const BookDetailPage: React.FC = () => {
   const images = book.image_urls && book.image_urls.length > 0 ? book.image_urls : ['/placeholder-book.png'];
   
   const getLocalizedTitle = () => {
-    return (book as any)[`title_${language}`] || (language === 'ar' ? book.title : ((book as any).title_en || book.title));
+    return (book as any)[`title_${language}`] || 
+           (language !== 'ar' && (book as any).title_en ? (book as any).title_en : book.title);
   };
 
   const getLocalizedDescription = () => {
-    return (book as any)[`description_${language}`] || 
-           (book as any)[`descreption_${language}`] || 
-           (language === 'ar' ? book.description : ((book as any).description_en || (book as any).descreption_en || book.description));
+    const desc = (book as any)[`description_${language}`] || 
+                 (book as any)[`descreption_${language}`];
+    
+    if (desc) return desc;
+    
+    if (language !== 'ar') {
+      return (book as any).description_en || (book as any).descreption_en || book.description;
+    }
+    
+    return book.description;
+  };
+
+  const getLocalizedCategoryName = (name: string) => {
+    const mapping: Record<string, string> = {
+      "تعليم اللغة العربية": "cat_arabic_language",
+      "الابتدائي": "cat_primary",
+      "الاعدادي": "cat_middle_school",
+      "محو الامية": "cat_literacy",
+      "العربية بين يديك": "cat_arabic_between_hands",
+      "العربية بين أيدي أولادنا": "cat_arabic_for_children",
+      "الدراسات الإسلامية": "cat_islamic_studies",
+      "أدواة التنظيم": "cat_organization"
+    };
+
+    const key = mapping[name];
+    if (key) return t(key as any);
+    return name;
   };
 
   return (
@@ -131,8 +156,13 @@ const BookDetailPage: React.FC = () => {
                   {(manhaj?.translations as any)?.[language]?.name}
                 </span>
                 <span className="px-4 py-1 rounded-full bg-gray-100 text-gray-500 text-[10px] uppercase tracking-widest font-bold">
-                  {book.fiae}
+                  {getLocalizedCategoryName(book.fiae)}
                 </span>
+                {book.subfiat && (
+                  <span className="px-4 py-1 rounded-full bg-blue-50 text-blue-500 text-[10px] uppercase tracking-widest font-bold">
+                    {getLocalizedCategoryName(book.subfiat)}
+                  </span>
+                )}
                 {book.mostawa && (
                   <span className="px-4 py-1 rounded-full bg-amber-50 text-amber-600 text-[10px] uppercase tracking-widest font-bold">
                     {book.mostawa}

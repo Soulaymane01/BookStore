@@ -99,7 +99,8 @@ const SearchBar: React.FC = () => {
                     </div>
                     <div className="flex-1 overflow-hidden">
                       <h4 className="font-bold text-gray-900 truncate text-sm group-hover:text-red-600 transition-colors">
-                        {(book as any)[`title_${language}`] || (language === 'ar' ? book.title : ((book as any).title_en || book.title))}
+                        {(book as any)[`title_${language}`] || 
+                         (language !== 'ar' && (book as any).title_en ? (book as any).title_en : book.title)}
                       </h4>
                       <p className="text-xs text-red-600 font-bold">{book.price}</p>
                     </div>

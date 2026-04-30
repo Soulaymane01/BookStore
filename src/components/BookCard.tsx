@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Book } from '../data/books';
-import { ShoppingCartIcon, ArrowRightIcon } from 'lucide-react';
+import { ArrowRightIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface BookCardProps {
@@ -11,6 +11,28 @@ interface BookCardProps {
 
 const BookCard: React.FC<BookCardProps> = ({ book }) => {
   const { t, language, dir } = useLanguage();
+
+  const getLocalizedTitle = () => {
+    return (book as any)[`title_${language}`] || 
+           (language !== 'ar' && (book as any).title_en ? (book as any).title_en : book.title);
+  };
+
+  const getLocalizedCategoryName = (name: string) => {
+    const mapping: Record<string, string> = {
+      "تعليم اللغة العربية": "cat_arabic_language",
+      "الابتدائي": "cat_primary",
+      "الاعدادي": "cat_middle_school",
+      "محو الامية": "cat_literacy",
+      "العربية بين يديك": "cat_arabic_between_hands",
+      "العربية بين أيدي أولادنا": "cat_arabic_for_children",
+      "الدراسات الإسلامية": "cat_islamic_studies",
+      "أدواة التنظيم": "cat_organization"
+    };
+
+    const key = mapping[name];
+    if (key) return t(key as any);
+    return name;
+  };
 
   return (
     <motion.div
@@ -22,7 +44,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
         <Link to={`/book/${book.slug}`} className="relative z-10 w-full h-full perspective-1000">
           <motion.img
             src={book.image_urls[0] || '/placeholder-book.png'}
-            alt={book.title}
+            alt={getLocalizedTitle()}
             className="w-full h-full object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.2)] transform transition-all duration-500 group-hover:scale-105 group-hover:rotate-2"
           />
         </Link>
@@ -33,16 +55,20 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
 
       {/* Content Area */}
       <div className="p-8">
-        <div className="flex items-center gap-2 mb-3">
+        <div className="flex flex-wrap items-center gap-2 mb-3">
           <span className="text-[10px] uppercase tracking-widest font-bold text-red-600 bg-red-50 px-3 py-1 rounded-full">
-            {book.mostawa || 'General'}
+            {getLocalizedCategoryName(book.fiae)}
           </span>
+          {book.mostawa && (
+            <span className="text-[10px] uppercase tracking-widest font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded-full">
+              {book.mostawa}
+            </span>
+          )}
         </div>
         
         <Link to={`/book/${book.slug}`}>
           <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 min-h-[3.5rem] group-hover:text-red-600 transition-colors">
-            {/* Localized Title Logic */}
-            {(book as any)[`title_${language}`] || (language === 'ar' ? book.title : ((book as any).title_en || book.title))}
+            {getLocalizedTitle()}
           </h3>
         </Link>
         
@@ -61,11 +87,6 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
             <ArrowRightIcon className={`w-5 h-5 ${dir === 'rtl' ? 'rotate-180' : ''}`} />
           </Link>
         </div>
-      </div>
-      
-      {/* Quick Action Overlay */}
-      <div className="absolute top-4 right-4 z-20">
-         {/* Could add a wishlist feature icon here */}
       </div>
     </motion.div>
   );
