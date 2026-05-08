@@ -6,12 +6,16 @@ import HomePage from './pages/HomePage';
 import CatalogPage from './pages/CatalogPage';
 import BookDetailPage from './pages/BookDetailPage';
 import AboutUsPage from './pages/AboutUsPage';
+import ScrollToTop from './components/ScrollToTop';
+
 
 function App() {
   return (
     <LanguageProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
+
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
             <Route path='/about-us' element={<AboutUsPage />} />

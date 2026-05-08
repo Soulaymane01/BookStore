@@ -1,5 +1,425 @@
 [
   {
+    "id": "hrof-alaarby-byn-ydy-aoladna",
+    "title": "حروف العربية بين يدي أولادنا",
+    "description": "كتيّب حروف العربية بين يدي أولادنا كتيّب تمهيدي للطلاب الصفريين يسبق كتاب الطالب الأول من سلسلة العربية بين يدي أولادنا. وهو مدخل لتعليم القراءة والكتابة الآليتين؛ تهجي الحروف ورسمها. ويُقدَّم هذا الكتيب بالتزامن مع المدخل الحواري. من ميزات هذا الكتيب: تعليم الحروف المنفصلة والمتصلة, والتدريب على وصل الحروف. رُتبت الحروف حسب سهولتها رسما (قلة التغير مع الوصل). التدريب على الكتابة بدءا بمروره بالقلم على الحرف الهدف بأشكاله المتنوعة, فكتابة هذا الحرف, فمروره بالقلم على الكلمة, فكتابة الكلمة. اختيرت الكلمات من الأعلام المشهورة ؛ حتى لا ينشغل الطالب بالتفكير في معناها. سلمت هذه الطريقة من سلبيات الطريقة التقليدية. الزمن المناسب لتعليم كتيّب الحروف: أسبوعان دراسيان . د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
+    "price": "19.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/78/conversions/5ebbb75594eec-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/hrof-alaarby-byn-ydy-aoladna",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "hrof-alaarby-byn-ydy-aoladna",
+    "title_en": "Arabic For All - حروف العربية بين يدي أولادنا"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-book-1",
+    "title": "العربية بين يدي أولادنا - كتاب الطالب - الأول",
+    "description": "يتكون الكتاب الأول من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
+    "price": "13.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/53/conversions/5eba8f45a947f-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-1",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-student-book-1",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - الأول"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-book-2",
+    "title": "العربية بين يدي أولادنا - كتاب الطالب - الثاني",
+    "description": "يتكون الكتاب الثاني من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
+    "price": "13.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/95/conversions/01KCNG0JDH2DJRPYX916T02496-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-2",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 2",
+    "slug": "arabic-at-our-childrens-hands-student-book-2",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - الثاني"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-book-3",
+    "title": "العربية بين يدي أولادنا - كتاب الطالب - الثالث",
+    "description": "يتكون الكتاب الثالث من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
+    "price": "13.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/54/conversions/5eba8f463b201-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-3",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 3",
+    "slug": "arabic-at-our-childrens-hands-student-book-3",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - الثالث"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-book-4",
+    "title": "العربية بين يدي أولادنا - كتاب الطالب - الرابع",
+    "description": "يتكون الكتاب الرابع من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
+    "price": "13.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/55/conversions/5eba8f476ac20-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-4",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 4",
+    "slug": "arabic-at-our-childrens-hands-student-book-4",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - الرابع"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-book-5",
+    "title": "العربية بين يدي أولادنا - كتاب الطالب - الخامس",
+    "description": "يتكون الكتاب الخامس من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
+    "price": "13.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/56/conversions/5eba8f48891d1-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-5",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-student-book-5",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - الخامس"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-book-6",
+    "title": "العربية بين يدي أولادنا - كتاب الطالب - السادس",
+    "description": "يتكون الكتاب السادس من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
+    "price": "13.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/57/conversions/5eba8f4a2263e-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-6",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-student-book-6",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - السادس"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-book-7",
+    "title": "العربية بين يدي أولادنا - كتاب الطالب - السابع",
+    "description": "يتكون الكتاب السابع من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
+    "price": "13.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/58/conversions/5eba8f4c7df4e-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-7",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-student-book-7",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - السابع"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-book-8",
+    "title": "العربية بين يدي أولادنا - كتاب الطالب - الثامن",
+    "description": "يتكون الكتاب الثامن من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
+    "price": "13.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/59/conversions/5eba8f4fa09d7-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-8",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-student-book-8",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - الثامن"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-book-9",
+    "title": "العربية بين يدي أولادنا - كتاب الطالب - التاسع",
+    "description": "يتكون الكتاب التاسع من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
+    "price": "13.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/60/conversions/5eba8f5769d74-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-9",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-student-book-9",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - التاسع"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-book-10",
+    "title": "العربية بين يدي أولادنا - كتاب الطالب – العاشر",
+    "description": "هذه السلسلة هي من أحدث السلاسل التي صدرت لتعليم اللغة العربية لغير الناطقين بها للصغار. المحور الأساسي: النص، حيث تدور حوله جميع التدريبات وتعليم المهارات والعناصر اللغوية.",
+    "price": "17.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/61/conversions/5eba8f573ea70-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-10",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-student-book-10",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book – العاشر"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-book-11",
+    "title": "العربية بين يدي أولادنا - كتاب الطالب – الحادي عشر",
+    "description": "هذه السلسلة هي من أحدث السلاسل التي صدرت لتعليم اللغة العربية لغير الناطقين بها للصغار. المحور الأساسي: النص، حيث تدور حوله جميع التدريبات وتعليم المهارات والعناصر اللغوية.",
+    "price": "17.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/62/conversions/5eba8f523620d-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-11",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-student-book-11",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book – الحادي عشر"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-book-12",
+    "title": "العربية بين يدي أولادنا - كتاب الطالب – الثاني عشر",
+    "description": "هذه السلسلة هي من أحدث السلاسل التي صدرت لتعليم اللغة العربية لغير الناطقين بها للصغار. المحور الأساسي: النص، حيث تدور حوله جميع التدريبات وتعليم المهارات والعناصر اللغوية.",
+    "price": "17.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/63/conversions/5eba8f573b3d7-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-12",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 2",
+    "slug": "arabic-at-our-childrens-hands-student-book-12",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book – الثاني عشر"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-book-1",
+    "title": "العربية بين يدي أولادنا - كتاب المعلم - الأول",
+    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها . التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
+    "price": "19.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/64/conversions/5ebbb329257f6-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-1",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-teacher-book-1",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الأول"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-book-2",
+    "title": "العربية بين يدي أولادنا - كتاب المعلم - الثاني",
+    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها . التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
+    "price": "19.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/65/conversions/5ebbb329b6e8a-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-2",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 2",
+    "slug": "arabic-at-our-childrens-hands-teacher-book-2",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الثاني"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-book-3",
+    "title": "العربية بين يدي أولادنا - كتاب المعلم - الثالث",
+    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها, وأساليب عرض مهارات اللغة وعناصرها المختلفة، مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, وأساليب عرض المفردات بأنواعها. التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
+    "price": "19.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/66/conversions/5ebbb32ad2b2e-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-3",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 3",
+    "slug": "arabic-at-our-childrens-hands-teacher-book-3",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الثالث"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-book-4",
+    "title": "العربية بين يدي أولادنا - كتاب المعلم - الرابع",
+    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب. نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها. التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
+    "price": "19.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/67/conversions/5ebbb32c884ff-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-4",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 4",
+    "slug": "arabic-at-our-childrens-hands-teacher-book-4",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الرابع"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-book-5",
+    "title": "العربية بين يدي أولادنا - كتاب المعلم - الخامس",
+    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة، وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا. ويحتوي كل كتاب معلم على فوائد، منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها، وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب. نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات، وأساليب عرض المفردات بأنواعها. التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات.",
+    "price": "19.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/68/conversions/5ebbb339388b5-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-5",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-teacher-book-5",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الخامس"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-book-6",
+    "title": "العربية بين يدي أولادنا - كتاب المعلم - السادس",
+    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة، وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا. ويحتوي كل كتاب معلم على فوائد، منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها، وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب. نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات، وأساليب عرض المفردات بأنواعها. التعريف بأهداف كلّ وحدة وبموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على (226) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
+    "price": "19.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/69/conversions/5ebbb33507450-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-6",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-teacher-book-6",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - السادس"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-book-7",
+    "title": "العربية بين يدي أولادنا - كتاب المعلم - السابع",
+    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة، وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا. ويحتوي كل كتاب معلم على فوائد، منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها، وأساليب عرض مهارات اللغة وعناصرها المختلفة، ومقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. كما يحتوي على حلّ تدريبات كتب الطالب، نصوص فهم المسموع، وإجابة أسئلة الاختبارات في كتب الطالب. يشمل أيضاً التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات، و أساليب عرض المفردات بأنواعها، والتعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه، ووصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
+    "price": "19.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/70/conversions/5ebbb33238219-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-7",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-teacher-book-7",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - السابع"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-book-8",
+    "title": "العربية بين يدي أولادنا - كتاب المعلم - الثامن",
+    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة، وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها . التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات.",
+    "price": "19.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/71/conversions/5ebbb339570fc-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-8",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-teacher-book-8",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الثامن"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-book-9",
+    "title": "العربية بين يدي أولادنا - كتاب المعلم - التاسع",
+    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها . التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
+    "price": "19.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/72/conversions/5ebbb33acbdac-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-9",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-teacher-book-9",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - التاسع"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-book-10",
+    "title": "العربية بين يدي أولادنا - كتاب المعلم - العاشر",
+    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا. ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها, وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب. نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها. التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن ابراهيم الفوزان, د. محمد عبد الرحمن آل الشيخ",
+    "price": "25.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/73/conversions/5feb26193461a-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-10",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-teacher-book-10",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - العاشر"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-book-11",
+    "title": "العربية بين يدي أولادنا - كتاب المعلم - الحادي عشر",
+    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها . التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن ابراهيم الفوزان, د. محمد عبد الرحمن آل الشيخ",
+    "price": "25.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/74/conversions/5feb250b50a38-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-11",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-teacher-book-11",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الحادي عشر"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-book-12",
+    "title": "العربية بين يدي أولادنا - كتاب المعلم - الثاني عشر",
+    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها . التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن ابراهيم الفوزان, د. محمد عبد الرحمن آل الشيخ",
+    "price": "25.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/75/conversions/5feb250b5c3fc-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-12",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 2",
+    "slug": "arabic-at-our-childrens-hands-teacher-book-12",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الثاني عشر"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-student-all",
+    "title": "العربية بين يدي أولادنا - مجموعة كتب الطالب ( 1- 12 )",
+    "description": "هي أحدث السلاسل المتخصصة في تعليم اللغة العربية لغير الناطقين بها، وقد ألفها نخبة من الأكاديميين المتخصصين. الدارسون من عمر (5 - 18) عامًا.",
+    "price": "19.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/76/conversions/603b3cc6bf10a-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-all",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-student-all",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - مجموعة كتب الطالب ( 1- 12 )"
+  },
+  {
+    "id": "arabic-at-our-childrens-hands-teacher-all",
+    "title": "العربية بين يدي أولادنا - مجموعة كتب المعلم ( 1- 12 )",
+    "description": "ترافق كتب المعلم كتب الطالب خطوة بخطوة وصفحة بصفحة، وهدفها الأساسي هو تزويد المعلم بمجموعة من الأساليب والإجراءات والاقتراحات لتدريس كل صفحة في كتب الطالب بطريقة فعّالة، مما يحقق أفضل النتائج. محتوى شامل: تشمل كتب المعلم حلول تدريبات كتاب الطالب.",
+    "price": "29.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/77/conversions/61a87de86648f-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-all",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين أيدي أولادنا",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-our-childrens-hands-teacher-all",
+    "title_en": "Arabic For All - العربية بين يدي أولادنا - مجموعة كتب المعلم ( 1- 12 )"
+  },
+  {
+    "id": "arabic-at-your-hands-letters",
+    "title": "الحروف العربية بين يديك",
+    "description": "كتيّب تمهيدي للطلاب الصفريين يسبق كتاب الطالب الأول من سلسلة العربية بين يديك . وهو مدخل لتعليم القراءة والكتابة الآليتين؛ تهجي الحروف ورسمها. ويُقدَّم هذا الكتيب بالتزامن مع المدخل الحواري. تعليم الحروف المنفصلة والمتصلة, والتدريب على وصل الحروف.",
+    "price": "19.90",
+    "image_urls": [
+      "https://platform.arabicforall.net/storage/52/conversions/5ebbb24db329d-cover.webp"
+    ],
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-your-hands-letters",
+    "manhaj": "arabicforall",
+    "fiae": "العربية بين يديك",
+    "mostawa": "Level 1",
+    "slug": "arabic-at-your-hands-letters",
+    "title_en": "Arabic For All - الحروف العربية بين يديك"
+  },
+  {
     "id": "arabic-at-your-hands-student-book-1-1",
     "title": "العربية بين يديك - كتاب الطالب | المستوى الأول - الجزء 1",
     "description": "يتكون مستوى الطالب الأول من جزأين (كتابين) يَضُمّان (16) وَحْدَةً (8 وحدات لكل جزء), تتألّفُ كُلُّ وَحدةٍ من (9) دُروسٍ, وبِهذا يحتوي هذا المستوى على (144) درساً أساسِيّا. وقد جاء توزيع دروس كُلِّ وَحْدَةٍ كما يلي: يتضمن المستوى اختبارات قصيرة (8 اختبارات بعد كل وحدتين)،واختباران موسعان لتقييم المستوى: اختبار نصفي بعد نهاية الكتاب الأول، واختبار نهائي شامل في آخر المستوى.",
@@ -210,520 +630,25 @@
     "title_en": "Arabic For All - العربية بين يديك - كتب الطالب - جميع المستويات"
   },
   {
-    "id": "arabic-at-your-hands-letters%20",
-    "title": "الحروف العربية بين يديك",
-    "description": "كتيّب تمهيدي للطلاب الصفريين يسبق كتاب الطالب الأول من سلسلة العربية بين يديك . وهو مدخل لتعليم القراءة والكتابة الآليتين؛ تهجي الحروف ورسمها. ويُقدَّم هذا الكتيب بالتزامن مع المدخل الحواري. تعليم الحروف المنفصلة والمتصلة, والتدريب على وصل الحروف.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/52/conversions/5ebbb24db329d-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-your-hands-letters%20",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين يديك",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-your-hands-letters%20",
-    "title_en": "Arabic For All - الحروف العربية بين يديك"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-book-1",
-    "title": "العربية بين يدي أولادنا - كتاب الطالب - الأول",
-    "description": "يتكون الكتاب الأول من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/53/conversions/5eba8f45a947f-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-1",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-student-book-1",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - الأول"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-book-2",
-    "title": "العربية بين يدي أولادنا - كتاب الطالب - الثاني",
-    "description": "يتكون الكتاب الثاني من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/95/conversions/01KCNG0JDH2DJRPYX916T02496-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-2",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 2",
-    "slug": "arabic-at-our-childrens-hands-student-book-2",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - الثاني"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-book-3",
-    "title": "العربية بين يدي أولادنا - كتاب الطالب - الثالث",
-    "description": "يتكون الكتاب الثالث من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/54/conversions/5eba8f463b201-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-3",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 3",
-    "slug": "arabic-at-our-childrens-hands-student-book-3",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - الثالث"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-book-4",
-    "title": "العربية بين يدي أولادنا - كتاب الطالب - الرابع",
-    "description": "يتكون الكتاب الرابع من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/55/conversions/5eba8f476ac20-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-4",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 4",
-    "slug": "arabic-at-our-childrens-hands-student-book-4",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - الرابع"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-book-5",
-    "title": "العربية بين يدي أولادنا - كتاب الطالب - الخامس",
-    "description": "يتكون الكتاب الخامس من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/56/conversions/5eba8f48891d1-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-5",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-student-book-5",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - الخامس"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-book-6",
-    "title": "العربية بين يدي أولادنا - كتاب الطالب - السادس",
-    "description": "يتكون الكتاب السادس من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/57/conversions/5eba8f4a2263e-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-6",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-student-book-6",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - السادس"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-book-7",
-    "title": "العربية بين يدي أولادنا - كتاب الطالب - السابع",
-    "description": "يتكون الكتاب السابع من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/58/conversions/5eba8f4c7df4e-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-7",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-student-book-7",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - السابع"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-book-8",
-    "title": "العربية بين يدي أولادنا - كتاب الطالب - الثامن",
-    "description": "يتكون الكتاب الثامن من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/59/conversions/5eba8f4fa09d7-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-8",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-student-book-8",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - الثامن"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-book-9",
-    "title": "العربية بين يدي أولادنا - كتاب الطالب - التاسع",
-    "description": "يتكون الكتاب التاسع من (8) وحدات تعليمية. تتألف كل وحدة من (5) دروس أساسية، بالإضافة إلى نشاط خاص بنهاية الوحدة. بذلك، يحتوي الكتاب على ما مجموعه (40) درسًا أساسيًا.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/60/conversions/5eba8f5769d74-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-9",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-student-book-9",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book - التاسع"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-book-10",
-    "title": "العربية بين يدي أولادنا - كتاب الطالب – العاشر",
-    "description": "هذه السلسلة هي من أحدث السلاسل التي صدرت لتعليم اللغة العربية لغير الناطقين بها للصغار. المحور الأساسي: النص، حيث تدور حوله جميع التدريبات وتعليم المهارات والعناصر اللغوية.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/61/conversions/5eba8f573ea70-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-10",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-student-book-10",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book – العاشر"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-book-11",
-    "title": "العربية بين يدي أولادنا - كتاب الطالب – الحادي عشر",
-    "description": "هذه السلسلة هي من أحدث السلاسل التي صدرت لتعليم اللغة العربية لغير الناطقين بها للصغار. المحور الأساسي: النص، حيث تدور حوله جميع التدريبات وتعليم المهارات والعناصر اللغوية.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/62/conversions/5eba8f523620d-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-11",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-student-book-11",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book – الحادي عشر"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-book-12",
-    "title": "العربية بين يدي أولادنا - كتاب الطالب – الثاني عشر",
-    "description": "هذه السلسلة هي من أحدث السلاسل التي صدرت لتعليم اللغة العربية لغير الناطقين بها للصغار. المحور الأساسي: النص، حيث تدور حوله جميع التدريبات وتعليم المهارات والعناصر اللغوية.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/63/conversions/5eba8f573b3d7-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-book-12",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 2",
-    "slug": "arabic-at-our-childrens-hands-student-book-12",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Student Book – الثاني عشر"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-book-1",
-    "title": "العربية بين يدي أولادنا - كتاب المعلم - الأول",
-    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها . التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/64/conversions/5ebbb329257f6-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-1",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-teacher-book-1",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الأول"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-book-2",
-    "title": "العربية بين يدي أولادنا - كتاب المعلم - الثاني",
-    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها . التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/65/conversions/5ebbb329b6e8a-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-2",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 2",
-    "slug": "arabic-at-our-childrens-hands-teacher-book-2",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الثاني"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-book-3",
-    "title": "العربية بين يدي أولادنا - كتاب المعلم - الثالث",
-    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها, وأساليب عرض مهارات اللغة وعناصرها المختلفة، مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, وأساليب عرض المفردات بأنواعها. التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/66/conversions/5ebbb32ad2b2e-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-3",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 3",
-    "slug": "arabic-at-our-childrens-hands-teacher-book-3",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الثالث"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-book-4",
-    "title": "العربية بين يدي أولادنا - كتاب المعلم - الرابع",
-    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب. نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها. التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/67/conversions/5ebbb32c884ff-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-4",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 4",
-    "slug": "arabic-at-our-childrens-hands-teacher-book-4",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الرابع"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-book-5",
-    "title": "العربية بين يدي أولادنا - كتاب المعلم - الخامس",
-    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة، وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا. ويحتوي كل كتاب معلم على فوائد، منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها، وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب. نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات، وأساليب عرض المفردات بأنواعها. التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات.",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/68/conversions/5ebbb339388b5-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-5",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-teacher-book-5",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الخامس"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-book-6",
-    "title": "العربية بين يدي أولادنا - كتاب المعلم - السادس",
-    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة، وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا. ويحتوي كل كتاب معلم على فوائد، منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها، وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب. نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات، وأساليب عرض المفردات بأنواعها. التعريف بأهداف كلّ وحدة وبموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على (226) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/69/conversions/5ebbb33507450-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-6",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-teacher-book-6",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - السادس"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-book-7",
-    "title": "العربية بين يدي أولادنا - كتاب المعلم - السابع",
-    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة، وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا. ويحتوي كل كتاب معلم على فوائد، منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها، وأساليب عرض مهارات اللغة وعناصرها المختلفة، ومقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. كما يحتوي على حلّ تدريبات كتب الطالب، نصوص فهم المسموع، وإجابة أسئلة الاختبارات في كتب الطالب. يشمل أيضاً التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات، و أساليب عرض المفردات بأنواعها، والتعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه، ووصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/70/conversions/5ebbb33238219-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-7",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-teacher-book-7",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - السابع"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-book-8",
-    "title": "العربية بين يدي أولادنا - كتاب المعلم - الثامن",
-    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة، وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها . التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات.",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/71/conversions/5ebbb339570fc-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-8",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-teacher-book-8",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الثامن"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-book-9",
-    "title": "العربية بين يدي أولادنا - كتاب المعلم - التاسع",
-    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها . التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/72/conversions/5ebbb33acbdac-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-9",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-teacher-book-9",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - التاسع"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-book-10",
-    "title": "العربية بين يدي أولادنا - كتاب المعلم - العاشر",
-    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا. ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها, وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب. نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها. التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن ابراهيم الفوزان, د. محمد عبد الرحمن آل الشيخ",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/73/conversions/5feb26193461a-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-10",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-teacher-book-10",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - العاشر"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-book-11",
-    "title": "العربية بين يدي أولادنا - كتاب المعلم - الحادي عشر",
-    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها . التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن ابراهيم الفوزان, د. محمد عبد الرحمن آل الشيخ",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/74/conversions/5feb250b50a38-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-11",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-teacher-book-11",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الحادي عشر"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-book-12",
-    "title": "العربية بين يدي أولادنا - كتاب المعلم - الثاني عشر",
-    "description": "كتب المعلم تسير مع كتب الطالب خطوة خطوة وصفحة صفحة, وتهدف كتب المعلّم إلى تزويد المعلّم بمجموعة من الأساليب والإجراءات والاقتراحات، التي تمكّنه من تدريس كل صفحة في كتب الطالب بطريقة فعّالة، تحقّق أفضل النتائج. وتشمل كذلك حلول تدريبات كتاب الطالب. وقد تضمّن كل كتاب من كتب المعلّم كتاب الطالب لنفس المستوى والذي جاءت صفحاته مصغّرة، حتّى يسهل على المعلّم متابعة المادّة التعليمية الخاصّة بالطالب دون الحاجة إلى حمل كتاب الطالب منفصلا . ويحتوي كل كتاب معلم على فوائد, منها: إرشادات عامّة للمعلّم تشمل طرائق تعليم اللغة لغير أهلها , وأساليب عرض مهارات اللغة وعناصرها المختلفة. مقترحات لإجراء التدريبات الخاصة بكل مستوى وأخرى للأنشطة إضافية. حلّ تدريبات كتب الطالب . نصوص فهم المسموع. إجابة أسئلة الاختبارات في كتب الطالب. التعريف بمحتويات كلّ وحدة من التراكيب والمفردات والأصوات, و أساليب عرض المفردات بأنواعها . التعريف بأهداف كلّ وحدة و بموضوع كلّ نص، وبيان طريقة عرضه. وصف لتراكيب الوحدات. هذا بالإضافة إلى احتواء كتب المعلم على ( 226 ) توجيها عامّا للمعلّم؛ في إدارة صفّه، وفوائد له في تعليم اللغة ومهاراتها وعناصرها واختباراتها، وفي إطلالة على الضروري من جوانب علم اللغة التطبيقي وتعليم اللغات. د. عبد الرحمن ابراهيم الفوزان, د. محمد عبد الرحمن آل الشيخ",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/75/conversions/5feb250b5c3fc-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-book-12",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 2",
-    "slug": "arabic-at-our-childrens-hands-teacher-book-12",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - Teacher Book - الثاني عشر"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-student-all",
-    "title": "العربية بين يدي أولادنا - مجموعة كتب الطالب ( 1- 12 )",
-    "description": "هي أحدث السلاسل المتخصصة في تعليم اللغة العربية لغير الناطقين بها، وقد ألفها نخبة من الأكاديميين المتخصصين. الدارسون من عمر (5 - 18) عامًا.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/76/conversions/603b3cc6bf10a-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-student-all",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-student-all",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - مجموعة كتب الطالب ( 1- 12 )"
-  },
-  {
-    "id": "arabic-at-our-childrens-hands-teacher-all",
-    "title": "العربية بين يدي أولادنا - مجموعة كتب المعلم ( 1- 12 )",
-    "description": "ترافق كتب المعلم كتب الطالب خطوة بخطوة وصفحة بصفحة، وهدفها الأساسي هو تزويد المعلم بمجموعة من الأساليب والإجراءات والاقتراحات لتدريس كل صفحة في كتب الطالب بطريقة فعّالة، مما يحقق أفضل النتائج. محتوى شامل: تشمل كتب المعلم حلول تدريبات كتاب الطالب.",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/77/conversions/61a87de86648f-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-our-childrens-hands-teacher-all",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "arabic-at-our-childrens-hands-teacher-all",
-    "title_en": "Arabic For All - العربية بين يدي أولادنا - مجموعة كتب المعلم ( 1- 12 )"
-  },
-  {
-    "id": "hrof-alaarby-byn-ydy-aoladna",
-    "title": "حروف العربية بين يدي أولادنا",
-    "description": "كتيّب حروف العربية بين يدي أولادنا كتيّب تمهيدي للطلاب الصفريين يسبق كتاب الطالب الأول من سلسلة العربية بين يدي أولادنا. وهو مدخل لتعليم القراءة والكتابة الآليتين؛ تهجي الحروف ورسمها. ويُقدَّم هذا الكتيب بالتزامن مع المدخل الحواري. من ميزات هذا الكتيب: تعليم الحروف المنفصلة والمتصلة, والتدريب على وصل الحروف. رُتبت الحروف حسب سهولتها رسما (قلة التغير مع الوصل). التدريب على الكتابة بدءا بمروره بالقلم على الحرف الهدف بأشكاله المتنوعة, فكتابة هذا الحرف, فمروره بالقلم على الكلمة, فكتابة الكلمة. اختيرت الكلمات من الأعلام المشهورة ؛ حتى لا ينشغل الطالب بالتفكير في معناها. سلمت هذه الطريقة من سلبيات الطريقة التقليدية. الزمن المناسب لتعليم كتيّب الحروف: أسبوعان دراسيان . د. عبد الرحمن بن إبراهيم الفوزان, د. محمد بن عبد الرحمن آل الشيخ",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/78/conversions/5ebbb75594eec-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/hrof-alaarby-byn-ydy-aoladna",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "hrof-alaarby-byn-ydy-aoladna",
-    "title_en": "Arabic For All - حروف العربية بين يدي أولادنا"
-  },
-  {
-    "id": "alalaaab-allghoy-byn-ydy-aoladna-gmyaa-alktb",
-    "title": "الألعاب اللغوية بين يدي أولادنا-جميع الكتب",
-    "description": "الألعاب اللغوية من أهم أنشطة التعليم الاتصالي في الصف اللغوي؛ لأن الصف اللغوي مكان مصطنع لتعليم اللغة، واللعبة اللغوية تقلل من ظاهرة الاصطناع التي تحيط بالتعليم داخل الصف، كما تحقق قدرًا كبيرًا من الواقعية في ممارسة اللغة، وهي مكمل مهم للعملية التعليمية؛ فتعلم اللغة ثقيل على الكبار قبل الصغار، واللعب في جو من السرور والمرح يساعد على إنجاح التعليم، كما ينمي روح التنافس عند الطلاب وقدرتهم على العمل في مجموعة. وسيجد المعلم نفسه مستمتعًا هو الآخر بهذه الألعاب اللغوية إذا حفز قدراته على الإبداع والخيال في ابتكار ألعاب جديدة، وتطوير ما لديه من ألعاب، ويمكنه كذلك تحويل بعض ألعاب هذا الكتاب إلى تدريبات إذا احتاج ذلك. فوائد الألعاب اللغوية: • تنقل اللغة من الجانب النظري إلى الجانب التطبيقي من خلال التطبيق العملي للغة . • تنمي المهارات اللغوية لدى الطالب؛ خصوصاً مهارتي القراءة والكلام، وتعزز كذلك عناصر اللغة مثل المفردات والتراكيب. • تسهل التعليم. • تجعل الدرس شيقًا, لأنها تحقق الفائدة والتسلية معا. • تخلص بعض الطلاب من مشكلات لغوية ونفسية. العربية للجميع تهدف إلى تأصيل تعليم اللغة العربية لغير الناطقين بها",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/79/conversions/610bd5070d206-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/alalaaab-allghoy-byn-ydy-aoladna-gmyaa-alktb",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "alalaaab-allghoy-byn-ydy-aoladna-gmyaa-alktb",
-    "title_en": "Arabic For All - الألعاب اللغوية بين يدي أولادنا-جميع الكتب"
-  },
-  {
-    "id": "alalaaab-allghoy-byn-ydy-aoladna-alktab-alaol",
-    "title": "الألعاب اللغوية بين يدي أولادنا-الكتاب الأول",
-    "description": "الألعاب اللغوية من أهم أنشطة التعليم الاتصالي في الصف اللغوي؛ لأن الصف اللغوي مكان مصطنع لتعليم اللغة، واللعبة اللغوية تقلل من ظاهرة الاصطناع التي تحيط بالتعليم داخل الصف، كما تحقق قدرًا كبيرًا من الواقعية في ممارسة اللغة، وهي مكمل مهم للعملية التعليمية؛ فتعلم اللغة ثقيل على الكبار قبل الصغار، واللعب في جو من السرور والمرح يساعد على إنجاح التعليم، كما ينمي روح التنافس عند الطلاب وقدرتهم على العمل في مجموعة. وسيجد المعلم نفسه مستمتعًا هو الآخر بهذه الألعاب اللغوية إذا حفز قدراته على الإبداع والخيال في ابتكار ألعاب جديدة، وتطوير ما لديه من ألعاب، ويمكنه كذلك تحويل بعض ألعاب هذا الكتاب إلى تدريبات إذا احتاج ذلك. فوائد الألعاب اللغوية: نقل الطالب من الجانب النظري في التعليم إلى الجانب التطبيقي من خلال التطبيق العملي للغة. تنمية المهارات اللغوية لدى الطالب؛ خصوصاً مهارتي القراءة والكلام. تعزيز استخدام عناصر اللغة مثل المفردات والتراكيب. يكتشف الطالب قدراته الذاتية و العقلية. تساهم في تسهيل العملية التعليمية بإضافة وسيلة تعليمية مختلفة وفعالة. جعل الدرس شيقًا يجذب انتباه الطالب. تخلص بعض الطلاب من مشكلات اللغة ومن بعض المشكلات النفسية. تحقق الألعاب اللغوية الفائدة والتسلية معا للطالب.",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/80/conversions/6034baa5843d0-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/alalaaab-allghoy-byn-ydy-aoladna-alktab-alaol",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 1",
-    "slug": "alalaaab-allghoy-byn-ydy-aoladna-alktab-alaol",
-    "title_en": "Arabic For All - الألعاب اللغوية بين يدي أولادنا-الكتاب الأول"
-  },
-  {
-    "id": "alalaaab-allghoy-byn-ydy-aoladna-alktab-althany",
-    "title": "الألعاب اللغوية بين يدي أولادنا-الكتاب الثاني",
-    "description": "الألعاب اللغوية من أهم أنشطة التعليم الاتصالي في الصف اللغوي؛ لأن الصف اللغوي مكان مصطنع لتعليم اللغة، واللعبة اللغوية تقلل من ظاهرة الاصطناع التي تحيط بالتعليم داخل الصف، كما تحقق قدرًا كبيرًا من الواقعية في ممارسة اللغة، وهي مكمل مهم للعملية التعليمية؛ فتعلم اللغة ثقيل على الكبار قبل الصغار، واللعب في جو من السرور والمرح يساعد على إنجاح التعليم، كما ينمي روح التنافس عند الطلاب وقدرتهم على العمل في مجموعة. وسيجد المعلم نفسه مستمتعًا هو الآخر بهذه الألعاب اللغوية إذا حفز قدراته على الإبداع والخيال في ابتكار ألعاب جديدة، وتطوير ما لديه من ألعاب، ويمكنه كذلك تحويل بعض ألعاب هذا الكتاب إلى تدريبات إذا احتاج ذلك. فوائد الألعاب اللغوية: • تنقل اللغة من الجانب النظري إلى الجانب التطبيقي من خلال التطبيق العملي للغة . • تنمي المهارات اللغوية لدى الطالب؛ خصوصاً مهارتي القراءة والكلام، وتعزز كذلك عناصر اللغة مثل المفردات والتراكيب. • تسهل التعليم. • تجعل الدرس شيقًا, لأنها تحقق الفائدة والتسلية معا. • تخلص بعض الطلاب من مشكلات لغوية ونفسية. العربية للجميع تهدف إلى تأصيل تعليم اللغة العربية لغير الناطقين بها",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/81/conversions/608176769b345-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/alalaaab-allghoy-byn-ydy-aoladna-alktab-althany",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 2",
-    "slug": "alalaaab-allghoy-byn-ydy-aoladna-alktab-althany",
-    "title_en": "Arabic For All - الألعاب اللغوية بين يدي أولادنا-الكتاب الثاني"
-  },
-  {
-    "id": "alalaaab-allghoy-byn-ydy-aoladna-alktab-althalth",
-    "title": "الألعاب اللغوية بين يدي أولادنا-الكتاب الثالث",
-    "description": "الألعاب اللغوية من أهم أنشطة التعليم الاتصالي في الصف اللغوي؛  لأن الصف اللغوي مكان مصطنع لتعليم اللغة، واللعبة اللغوية تقلل من ظاهرة الاصطناع التي تحيط بالتعليم داخل الصف، كما تحقق قدرًا كبيرًا من الواقعية في ممارسة اللغة، وهي مكمل مهم للعملية التعليمية؛ فتعلم اللغة ثقيل على الكبار قبل الصغار، واللعب في جو من السرور والمرح يساعد على إنجاح التعليم، كما ينمي روح التنافس عند الطلاب وقدرتهم على العمل في مجموعة. وسيجد المعلم نفسه مستمتعًا هو الآخر بهذه الألعاب اللغوية إذا حفز قدراته على الإبداع والخيال في ابتكار ألعاب جديدة، وتطوير ما لديه من ألعاب، ويمكنه كذلك تحويل بعض ألعاب هذا الكتاب إلى تدريبات إذا احتاج ذلك. فوائد الألعاب اللغوية: • تنقل اللغة من الجانب النظري إلى الجانب التطبيقي من خلال التطبيق العملي للغة . • تنمي المهارات اللغوية لدى الطالب؛ خصوصاً مهارتي القراءة والكلام، وتعزز كذلك عناصر اللغة مثل المفردات والتراكيب. • تسهل التعليم. • تجعل الدرس شيقًا, لأنها تحقق الفائدة والتسلية معا. • تخلص بعض الطلاب من مشكلات لغوية ونفسية. العربية للجميع تهدف إلى تأصيل تعليم اللغة العربية لغير الناطقين بها",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/82/conversions/610ba80dd96c1-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/alalaaab-allghoy-byn-ydy-aoladna-alktab-althalth",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 3",
-    "slug": "alalaaab-allghoy-byn-ydy-aoladna-alktab-althalth",
-    "title_en": "Arabic For All - الألعاب اللغوية بين يدي أولادنا-الكتاب الثالث"
-  },
-  {
-    "id": "alalaaab-allghoy-byn-ydy-aoladna-alktab-alrabaa",
-    "title": "الألعاب اللغوية بين يدي أولادنا-الكتاب الرابع",
-    "description": "الألعاب اللغوية من أهم أنشطة التعليم الاتصالي في الصف اللغوي؛ لأن الصف اللغوي مكان مصطنع لتعليم اللغة، واللعبة اللغوية تقلل من ظاهرة الاصطناع التي تحيط بالتعليم داخل الصف، كما تحقق قدرًا كبيرًا من الواقعية في ممارسة اللغة، وهي مكمل مهم للعملية التعليمية؛ فتعلم اللغة ثقيل على الكبار قبل الصغار، واللعب في جو من السرور والمرح يساعد على إنجاح التعليم، كما ينمي روح التنافس عند الطلاب وقدرتهم على العمل في مجموعة. وسيجد المعلم نفسه مستمتعًا هو الآخر بهذه الألعاب اللغوية إذا حفز قدراته على الإبداع والخيال في ابتكار ألعاب جديدة، وتطوير ما لديه من ألعاب، ويمكنه كذلك تحويل بعض ألعاب هذا الكتاب إلى تدريبات إذا احتاج ذلك. فوائد الألعاب اللغوية: تنقل اللغة من الجانب النظري إلى الجانب التطبيقي من خلال التطبيق العملي للغة. تنمي المهارات اللغوية لدى الطالب؛ خصوصاً مهارتي القراءة والكلام، وتعزز كذلك عناصر اللغة مثل المفردات والتراكيب. تسهل التعليم. تجعل الدرس شيقًا, لأنها تحقق الفائدة والتسلية معا. تخلص بعض الطلاب من مشكلات لغوية ونفسية. العربية للجميع تهدف إلى تأصيل تعليم اللغة العربية لغير الناطقين بها",
-    "price": "19.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/83/conversions/610ba847073d1-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/alalaaab-allghoy-byn-ydy-aoladna-alktab-alrabaa",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين أيدي أولادنا",
-    "mostawa": "Level 4",
-    "slug": "alalaaab-allghoy-byn-ydy-aoladna-alktab-alrabaa",
-    "title_en": "Arabic For All - الألعاب اللغوية بين يدي أولادنا-الكتاب الرابع"
-  },
-  {
-    "id": "arabic-at-your-hands-dictionary%20",
+    "id": "arabic-at-your-hands-dictionary",
     "title": "المعجم العربي بين يديك عربي - عربي (مصوّر)",
     "description": "صُمِّم ليخدم متعلمي اللغة العربية من غير أبنائها ، وليخدم كذلك طلابنا العـرب في المراحـل المختلفة. يضمُّ أكثر من سبعة آلاف لفظ وتعبير.",
     "price": "19.90",
     "image_urls": [
       "https://platform.arabicforall.net/storage/51/conversions/66ee7a947900b-cover.webp"
     ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-your-hands-dictionary%20",
+    "product_url": "https://platform.arabicforall.net/shop/product/arabic-at-your-hands-dictionary",
     "manhaj": "arabicforall",
     "fiae": "العربية بين يديك",
     "mostawa": "Level 1",
-    "slug": "arabic-at-your-hands-dictionary%20",
+    "slug": "arabic-at-your-hands-dictionary",
     "title_en": "Arabic For All - المعجم العربي بين يديك عربي - عربي (مصوّر)"
   },
   {
     "id": "edaat-for-arabic-language-teachers-book",
     "title": "إضاءات لمعلمي اللغة العربية لغير الناطقين بها",
     "description": "كتاب (إضاءات) لمعلمي اللغة العربية لغير الناطقين بها يحتوي على إضاءات لمعلمي اللغة العربية لغير الناطقين بها لرفع كفاءتهم المهنية في تعليم اللغة العربية لغير الناطقين بها. من أحدث ما قدم في علم اللغة التطبيقي، ويعطي إطلالة واسعة على هذا الميدان ومجالاته الأساسية. مرجع خفيف وشامل يصحب معلم اللغة العربية في مسيرته التعليمية، ويسد حاجاتهم الفعلية في هذا الميدان. يزود المعلم بمجموعة من الأساليب والإجراءات التي تمكنه من تعليم اللغة بطريقة أكثر فاعلية. يرشد إلى كيفية تقديم مهارات اللغة وعناصرها المختلفة بالإضافة إلى كيفية إجراء التدريبات بأنواعها، وأمثلة تطبيقية لكل مهارة ولكل عنصر. يفيد المعلم المستجد ويفيد غيره من ذوي الخبرة من باب التذكرة. زود بمراجعة شاملة على شكل اختبار ذاتي لمعلمي اللغة العربية لغير الناطقين يتكون من 260 سؤالاً. د. عبد الرحمن بن إبراهيم الفوزان",
-    "price": "29.90",
+    "price": "15.90",
     "image_urls": [
       "https://platform.arabicforall.net/storage/84/conversions/4--cover.webp"
     ],
@@ -738,60 +663,15 @@
     "id": "lessons-in-teaching-arabic-phonetics-to-non-native-speakers",
     "title": "دروس في تعليم الأصوات العربية لغير الناطقين بها",
     "description": "كتاب الأصوات العربية من أحدث المنتجات التعليمية المختصة بعلم اللغة التطبيقي (اللسانيات). وهو كتاب خاص بتدريس أصوات اللغة العربية والتدريب عليها, مدعم بقرص صوتي CD . كما أنه يفيد كلا من الطالب والمعلم. ثلاثين درساً لعرض الأصوات العربية بأساليب مختلفة.",
-    "price": "45.00",
+    "price": "14.90",
     "image_urls": [
       "https://platform.arabicforall.net/storage/85/conversions/5ebbb86cc6068-cover.webp"
     ],
     "product_url": "https://platform.arabicforall.net/shop/product/lessons-in-teaching-arabic-phonetics-to-non-native-speakers",
     "manhaj": "arabicforall",
-    "fiae": "العربية للجميع",
+    "fiae": "العربية بين يديك",
     "mostawa": "Level 1",
     "slug": "lessons-in-teaching-arabic-phonetics-to-non-native-speakers",
     "title_en": "Arabic For All - دروس في تعليم الأصوات العربية لغير الناطقين بها"
-  },
-  {
-    "id": "how-to-learn-second-language",
-    "title": "كتاب كيف تتعلم لغة ثانية؟",
-    "description": "إن معرفة كيفية تعلم اللغة قضية رئيسية في إنجاح تعلم اللغة الثانية.. ونظراً لأهمية دور المتعلم في النجاح والإخفاق في تعلم اللغة، شهد ميدان تعليم اللغات اهتماماً كبيراً، وتركيزا ملحوظاً، على المتعلم وكيفية تزويده بالرؤى والمناهج الصحيحة لفهم اللغة وكيفية تعلمها واستخدام الاستراتيجيات المساعدة في ذلك... وذلك ما يحاول تقديمه كتاب \"كيف تتعلم لغة ثانية؟\" بأسلوب مباشر مبسط موجه للشباب رغبة في اختصار الخبرات. وسيساعدك كتاب \" كيف تتعلم لغة ثانية ؟ \" على الإجابة عن هذه التساؤلات التالية: كيف أبدأ في تعلم لغة ثانية؟ ما الفرق بين تعلم اللغة الأم واللغة الثانية؟ ماذا أتعلم من اللغة الثانية؟ كيف أتعامل مع الأصوات اللغوية؟ كيف أتعلم المفردات اللغوية؟ وكذلك التراكيب اللغوية؟ كيف أتعامل مع المهارات اللغوية المختلفة (الاستماع، الكلام، القراءة، الكتابة)؟ كيف أتعامل مع ثقافة اللغة الثانية؟ كيف أتعامل مع الأخطاء اللغوية؟ ما أبرز العوامل المؤثرة في إنجاح تعلم اللغة؟ كم من الوقت احتاج لتعلم اللغة الثانية؟ والمزيد. العربية للجميع تهدف إلى تأصيل تعليم اللغة العربية لغير الناطقين بها",
-    "price": "45.00",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/86/conversions/5ebbc471df642-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/how-to-learn-second-language",
-    "manhaj": "arabicforall",
-    "fiae": "العربية للجميع",
-    "mostawa": "Level 1",
-    "slug": "how-to-learn-second-language",
-    "title_en": "Arabic For All - كتاب كيف تتعلم لغة ثانية؟"
-  },
-  {
-    "id": "arabic-on-air",
-    "title": "المستوى المبتدئ والمتوسط",
-    "description": "سلسلة تعليمية صوتية لتعليم اللغة العربية لغير الناطقين بها ( نسخة المتحدثين بالإنجليزية ). أحدث الطرق لتعلم اللغة العربية الفصحى بطريقة شيقة وسهلة. يتألف من 36 درسا تعليميا تتضمن مواقف مختلفة من الحياة اليومية. تحوي أكثر من 10 ساعات صوتية بأصوات عربية وإنجليزية أصيلة. تعلم ما يقارب من ( 800 مفردة ) من المفردات العربية الشائعة. مرفق معه كتيب إرشادي يتكون من 176 صفحة يحتوي على المادة المسموعة بالإضافة إلى بعض التدريبات. مناسب للمستوى المبتدئ والمتوسط من متعلمي اللغة العربية. مرن وسهل الاستخدام بالسيارة و الهواتف المحمولة و جميع المشغلات الصوتية. العربية للجميع تهدف إلى تأصيل تعليم اللغة العربية لغير الناطقين بها",
-    "price": "45.00",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/87/conversions/5ebbc472534ad-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/arabic-on-air",
-    "manhaj": "arabicforall",
-    "fiae": "العربية للجميع",
-    "mostawa": "Level 1",
-    "slug": "arabic-on-air",
-    "title_en": "Arabic For All - المستوى المبتدئ والمتوسط"
-  },
-  {
-    "id": "teacher-collection",
-    "title": "حقيبة المعلم",
-    "description": "حقيبة المعلم هي مجموعة متكاملة من المراجع والكتب الموجهة لمعلمي ومتعلمي اللغة العربية لغير الناطقين بها. تحتوي الحقيبة على المراجع التالية: 1. كتاب دروس في تعليم أصوات العربية لغير الناطقين بها: يهدف إلى التدريب على نطق الأصوات والتمييز بين الصوائت القصيرة والطويلة، والتمييز بين الأصوات المتشابهة (مثل السين والصاد).",
-    "price": "29.90",
-    "image_urls": [
-      "https://platform.arabicforall.net/storage/96/conversions/01KE9ETPN7RSHAMS5J93C41H6C-cover.webp"
-    ],
-    "product_url": "https://platform.arabicforall.net/shop/product/teacher-collection",
-    "manhaj": "arabicforall",
-    "fiae": "العربية بين يديك",
-    "mostawa": "Level 1",
-    "slug": "teacher-collection",
-    "title_en": "Arabic For All - حقيبة المعلم"
   }
 ]
