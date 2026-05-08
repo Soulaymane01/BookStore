@@ -17,30 +17,46 @@ const BreadcrumbNav: React.FC<BreadcrumbNavProps> = ({ light = false }) => {
 
   if (paths.length === 0) return null;
 
-  const translatePath = (path: string, type: string, isLast: boolean) => {
-    if (isLast && paths[0] === 'book') {
-      const book = getBookBySlug(path);
-      if (!book) return path;
-      const getLocalizedTitle = () => {
-        if (language === 'ar') return book.title;
-        if (language === 'en') return book.title_en || book.title;
-        if (language === 'es') return book.title_es || book.title;
-        if (language === 'pt') return book.title_pt || book.title;
-        if (language === 'it') return book.title_it || book.title;
-        return book.title;
-      };
-      return getLocalizedTitle();
-    }
+  const categoryMapping: Record<string, string> = {
+    "تعليم اللغة العربية": "cat_arabic_language",
+    "الابتدائي": "cat_primary",
+    "الاعدادي": "cat_middle_school",
+    "محو الامية": "cat_literacy",
+    "العربية بين يديك": "cat_arabic_between_hands",
+    "العربية بين أيدي أولادنا": "cat_arabic_for_children",
+    "الدراسات الإسلامية": "cat_islamic_studies",
+    "أدواة التنظيم": "cat_organization"
+  };
 
-    if (type === 'manhaj') {
-      const manhaj = manahij.find(m => m.id === path);
-      return manhaj?.translations[language as keyof typeof manhaj.translations]?.name || path;
-    }
-    
+  const translatePath = (path: string, index: number, isLast: boolean) => {
+    // 1. Handle Home/Special Root Paths
     if (path === 'catalog') return t('categories');
     if (path === 'book') return t('books');
     if (path === 'about-us') return t('aboutUs');
+
+    // 2. Handle Book Detail Title
+    if (isLast && paths[0] === 'book') {
+      const book = getBookBySlug(path);
+      if (!book) return path;
+      return (book as any)[`title_${language}`] || 
+             (language !== 'ar' && (book as any).title_en ? (book as any).title_en : book.title);
+    }
+
+    // 3. Handle Manhaj ID (typically at index 1 after /catalog/)
+    if (index === 1 && paths[0] === 'catalog') {
+      const manhaj = manahij.find(m => m.id === path);
+      if (manhaj) {
+        return (manhaj.translations as any)[language]?.name || manhaj.translations.ar.name;
+      }
+    }
+
+    // 4. Handle Categories (fiat, subfiat)
+    const categoryKey = categoryMapping[path];
+    if (categoryKey) {
+      return t(categoryKey as any);
+    }
     
+    // 5. Final Fallback
     return t(path) || path;
   };
 
@@ -62,13 +78,13 @@ const BreadcrumbNav: React.FC<BreadcrumbNavProps> = ({ light = false }) => {
         
         {paths.map((path, index) => {
           const isLast = index === paths.length - 1;
-          const url = `/${paths.slice(0, index + 1).join('/')}`;
+          let url = `/${paths.slice(0, index + 1).join('/')}`;
           
-          let type = '';
-          if (index === 1) type = 'manhaj';
+          // Redirect broken /book route to /catalog
+          if (path === 'book') url = '/catalog';
           
           const decodedPath = decodeURIComponent(path);
-          const label = translatePath(decodedPath, type, isLast);
+          const label = translatePath(decodedPath, index, isLast);
 
           return (
             <React.Fragment key={index}>
