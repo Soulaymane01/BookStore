@@ -7,14 +7,15 @@ export interface Translations {
 export const translations: Translations = {
   ar: {
     // Categories
-    cat_arabic_language: "تعليم اللغة العربية",
-    cat_primary: "الابتدائي",
-    cat_middle_school: "الاعدادي",
-    cat_literacy: "محو الامية",
+    cat_arabic_language: "اللغة العربية",
+    cat_primary: "مستويات الإبتدائية",
+    cat_middle_school: "مستويات الإعدادية الثانوية",
+    cat_literacy: "برامج محو الأمية",
     cat_arabic_between_hands: "العربية بين يديك",
     cat_arabic_for_children: "العربية بين أيدي أولادنا",
-    cat_islamic_studies: "الدراسات الإسلامية",
-    cat_organization: "أدواة التنظيم",
+    cat_islamic_studies: "التربية الإسلامية",
+    cat_kindergarten: "مستويات الحضانة",
+    cat_organization: "منتوجات أخرى",
     
     home: "الرئيسية",
     bookCatalog: "دار الادريسي للتوزيع",
@@ -107,6 +108,7 @@ export const translations: Translations = {
     cat_arabic_between_hands: "Arabic Between Your Hands",
     cat_arabic_for_children: "Arabic in Our Children's Hands",
     cat_islamic_studies: "Islamic Studies",
+    cat_kindergarten: "Kindergarten Levels",
     cat_organization: "Tools & Organization",
 
     home: "Home",
@@ -200,6 +202,7 @@ export const translations: Translations = {
     cat_arabic_between_hands: "El árabe en tus manos",
     cat_arabic_for_children: "El árabe en manos de nuestros hijos",
     cat_islamic_studies: "Estudios Islámicos",
+    cat_kindergarten: "Niveles de Preescolar",
     cat_organization: "Herramientas y Organización",
 
     home: "Inicio",
@@ -293,6 +296,7 @@ export const translations: Translations = {
     cat_arabic_between_hands: "Árabe em suas mãos",
     cat_arabic_for_children: "Árabe nas mãos de nossos filhos",
     cat_islamic_studies: "Estudos Islâmicos",
+    cat_kindergarten: "Níveis de Jardim de Infância",
     cat_organization: "Ferramentas e Organização",
 
     home: "Início",
@@ -386,6 +390,7 @@ export const translations: Translations = {
     cat_arabic_between_hands: "Arabo tra le tue mani",
     cat_arabic_for_children: "Arabo nelle mani dei nostri figli",
     cat_islamic_studies: "Studi Islamici",
+    cat_kindergarten: "Livelli della Scuola dell'Infanzia",
     cat_organization: "Strumenti e Organizzazione",
 
     home: "Home",

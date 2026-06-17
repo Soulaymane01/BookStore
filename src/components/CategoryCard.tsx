@@ -13,13 +13,13 @@ interface CategoryCardProps {
   imageUrl?: string;
 }
 
-const CategoryCard: React.FC<CategoryCardProps> = ({ 
-  title, 
-  type, 
-  count = 0, 
-  url, 
+const CategoryCard: React.FC<CategoryCardProps> = ({
+  title,
+  type,
+  count = 0,
+  url,
   description = '',
-  imageUrl = '' 
+  imageUrl = ''
 }) => {
   const { t, dir } = useLanguage();
 
@@ -35,7 +35,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
         return <BookOpenIcon className="h-8 w-8 text-indigo-600" />;
     }
   };
-  
+
   const getGradient = () => {
     switch (type) {
       case 'fiat':
@@ -70,7 +70,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
           {/* Content */}
           <div className="absolute inset-0 z-20 p-10 flex flex-col justify-end text-white">
             <span className="inline-block px-4 py-1 rounded-full bg-white/20 backdrop-blur-md text-[10px] uppercase tracking-widest mb-4 w-fit">
-               {t(type)}
+              {t(type)}
             </span>
             <h3 className="text-3xl font-bold mb-4 group-hover:text-red-400 transition-colors">
               {title}
@@ -81,26 +81,26 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
               </p>
             )}
             <div className="flex items-center gap-3 font-bold text-sm tracking-widest uppercase">
-               <span>{t('explore')}</span>
-               <ArrowRightIcon className={`w-4 h-4 transform transition-transform group-hover:translate-x-2 ${dir === 'rtl' ? 'rotate-180' : ''}`} />
+              <span>{t('explore')}</span>
+              <ArrowRightIcon className={`w-4 h-4 transform transition-transform group-hover:translate-x-2 ${dir === 'rtl' ? 'rotate-180' : ''}`} />
             </div>
           </div>
         </Link>
       </motion.div>
     );
   }
-  
+
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.4 }}
     >
-      <Link 
-        to={url} 
+      <Link
+        to={url}
         className={`group block relative p-1 rounded-[2rem] overflow-hidden`}
       >
         <div className={`absolute inset-0 bg-gradient-to-br ${getGradient()} opacity-100 group-hover:opacity-100 transition-opacity duration-500`} />
-        
+
         <div className="relative glass-effect p-8 rounded-[1.9rem] flex items-center justify-between border-white/40">
           <div className="flex items-center gap-6">
             <div className={`p-4 rounded-2xl bg-white shadow-sm group-hover:shadow-md transition-all`}>
@@ -117,9 +117,9 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
               )}
             </div>
           </div>
-          
+
           <div className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center group-hover:bg-gray-900 group-hover:text-white group-hover:border-gray-900 transition-all duration-300">
-             <ArrowRightIcon className={`w-4 h-4 ${dir === 'rtl' ? 'rotate-180' : ''}`} />
+            <ArrowRightIcon className={`w-4 h-4 ${dir === 'rtl' ? 'rotate-180' : ''}`} />
           </div>
         </div>
       </Link>

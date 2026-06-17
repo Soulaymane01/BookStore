@@ -501,7 +501,7 @@
     "descreption_es": "Dirigido a niños de 3 a 4 años\nLetras grandes y dibujos claros y bonitos\nEmpezando por colorear y llegando a la escritura\nDe escuchar a hablar, de mirar a leer\nUn deseo de descubrimiento y una comodidad en el aprendizaje.",
     "descreption_pt": "Destinado a crianças dos 3 aos 4 anos\nLetras grandes e desenhos claros e bonitos\nComeçando por colorir e chegando à escrita\nDe ouvir para falar, de assistir para ler\nUm desejo de descoberta e um conforto no aprendizado.",
     "descreption_it": "Rivolto a bambini dai 3 ai 4 anni\nLettere grandi e disegni chiari e belli\nPartire dal colorare e arrivare alla scrittura\nDall'ascolto al parlato, dal guardare alla lettura\nIl desiderio di scoperta e il conforto nell'apprendimento.",
-    "subfiat": "الابتدائي"
+    "subfiat": "مستويات الحضانة"
   },
   {
     "title": "خطوتي الثانية في تعلم لغتي",
@@ -521,7 +521,7 @@
     "descreption_es": "Dirigido a niños de 4 a 5 años\nFormación continua y continua en lectura y escritura de diversas letras árabes\nEn sus diversas poses y formas acompañadas de movimientos sencillos\nA partir de la palabra y la expresión lectura, comprensión y escritura.",
     "descreption_pt": "Destinado a crianças dos 4 aos 5 anos\nTreinamento contínuo e contínuo em leitura e escrita de várias letras árabes\nEm suas várias poses e formas acompanhadas de movimentos simples\nA partir da palavra e expressão leitura, compreensão e escrita.",
     "descreption_it": "Rivolto a bambini dai 4 ai 5 anni\nFormazione continua e continua sulla lettura e scrittura di varie lettere arabe\nNelle sue varie pose e forme accompagnate da semplici movimenti\nA partire dalla lettura, dalla comprensione e dalla scrittura delle parole e delle espressioni.",
-    "subfiat": "الابتدائي"
+    "subfiat": "مستويات الحضانة"
   },
   {
     "title": "خطوتي الثالثة في تعلم لغتي",
@@ -541,7 +541,7 @@
     "descreption_es": "Dirigido a niños de 5 a 6 años\nEn este nivel, se ha destinado un gran espacio para actividades educativas y educativas.\nBasado en la planificación, colorear, escribir, explorar, el juego con propósito y las actividades de mente abierta\nActivación armoniosa de la mente con los sentidos del oído, la vista y el habla",
     "descreption_pt": "Destinado a crianças de 5 a 6 anos\nNesse nível, um grande espaço foi alocado para atividades educacionais e educacionais.\nCom base em atividades de planejamento, coloração, escrita, exploração, brincadeiras intencionais e mente aberta\nAtivação harmoniosa da mente com os sentidos da audição, visão e fala",
     "descreption_it": "Rivolto a bambini dai 5 ai 6 anni\nA questo livello è stato destinato un ampio spazio alle attività didattiche e didattiche.\nBasato su attività di pianificazione, colorazione, scrittura, esplorazione, gioco intenzionale e apertura mentale\nAttivazione armoniosa della mente con i sensi dell'udito, della vista e della parola",
-    "subfiat": "الابتدائي"
+    "subfiat": "مستويات الحضانة"
   },
   {
     "title": "لغتنا العربية كتاب الخط للبراعم",
@@ -962,7 +962,7 @@
     "title": "توزيع المقرر",
     "description": "مرافق لكل المستويات من برامجنا يشرح كيفية القاء الدرس",
     "price": "€15,00",
-    "image_urls": "[]",
+    "image_urls": "['https://www.sanabel.be/wp-content/uploads/2024/03/Sanabel-Cover-Tawzi3.png']",
     "product_url": "https://www.sanabel.be/produit/sanabel-tawzi3-ar/",
     "manhaj": "Sanabel",
     "fiae": "تعليم اللغة العربية",
@@ -996,26 +996,6 @@
     "descreption_es": "Este libro está dirigido a jóvenes y adultos que tienen el deseo de aprender árabe.",
     "descreption_pt": "Este livro é destinado a jovens e adultos que desejam aprender árabe.",
     "descreption_it": "Questo libro è rivolto a giovani e adulti che hanno il desiderio di imparare l'arabo.",
-    "subfiat": "محو الامية"
-  },
-  {
-    "title": "أريد أن أتعلم اللغة العربية محو الأمية",
-    "description": "الأهداف العامة للكتاب :",
-    "price": "€24,90",
-    "image_urls": "['https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-1.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-2.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-3.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-4.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-5.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-6.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-7.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-8.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-9.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-10.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-11.png']",
-    "product_url": "https://www.sanabel.be/produit/je-veux-apprendre-la-langue-arabe/",
-    "manhaj": "Sanabel",
-    "fiae": "تعليم اللغة العربية",
-    "mostawa": null,
-    "slug": "i-want-to-learn-arabic-literacy",
-    "title_en": "I want to learn Arabic literacy",
-    "title_es": "Quiero aprender a leer y escribir árabe",
-    "title_pt": "Quero aprender a alfabetizar árabe",
-    "title_it": "Voglio imparare l'alfabetizzazione araba",
-    "descreption_en": "The general objectives of the book:",
-    "descreption_es": "Los objetivos generales del libro:",
-    "descreption_pt": "Os objetivos gerais do livro:",
-    "descreption_it": "Gli obiettivi generali del libro:",
     "subfiat": "محو الامية"
   },
   {
@@ -1076,6 +1056,26 @@
     "descreption_es": null,
     "descreption_pt": null,
     "descreption_it": null,
+    "subfiat": "محو الامية"
+  },
+  {
+    "title": "أريد أن أتعلم اللغة العربية محو الأمية",
+    "description": "الأهداف العامة للكتاب :",
+    "price": "€24,90",
+    "image_urls": "['https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-1.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-2.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-3.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-4.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-5.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-6.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-7.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-8.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-9.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-10.png', 'https://www.sanabel.be/wp-content/uploads/2024/06/ARNMoumiya-11.png']",
+    "product_url": "https://www.sanabel.be/produit/je-veux-apprendre-la-langue-arabe/",
+    "manhaj": "Sanabel",
+    "fiae": "تعليم اللغة العربية",
+    "mostawa": null,
+    "slug": "i-want-to-learn-arabic-literacy",
+    "title_en": "I want to learn Arabic literacy",
+    "title_es": "Quiero aprender a leer y escribir árabe",
+    "title_pt": "Quero aprender a alfabetizar árabe",
+    "title_it": "Voglio imparare l'alfabetizzazione araba",
+    "descreption_en": "The general objectives of the book:",
+    "descreption_es": "Los objetivos generales del libro:",
+    "descreption_pt": "Os objetivos gerais do livro:",
+    "descreption_it": "Gli obiettivi generali del libro:",
     "subfiat": "محو الامية"
   },
   {

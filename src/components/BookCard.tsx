@@ -26,7 +26,9 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
       "العربية بين يديك": "cat_arabic_between_hands",
       "العربية بين أيدي أولادنا": "cat_arabic_for_children",
       "الدراسات الإسلامية": "cat_islamic_studies",
-      "أدواة التنظيم": "cat_organization"
+      "تعليم الأسلام": "cat_islamic_studies",
+      "أدواة التنظيم": "cat_organization",
+      "مستويات الحضانة": "cat_kindergarten"
     };
 
     const key = mapping[name];

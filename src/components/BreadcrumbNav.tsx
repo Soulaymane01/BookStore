@@ -25,7 +25,9 @@ const BreadcrumbNav: React.FC<BreadcrumbNavProps> = ({ light = false }) => {
     "العربية بين يديك": "cat_arabic_between_hands",
     "العربية بين أيدي أولادنا": "cat_arabic_for_children",
     "الدراسات الإسلامية": "cat_islamic_studies",
-    "أدواة التنظيم": "cat_organization"
+    "تعليم الأسلام": "cat_islamic_studies",
+    "أدواة التنظيم": "cat_organization",
+    "مستويات الحضانة": "cat_kindergarten"
   };
 
   const translatePath = (path: string, index: number, isLast: boolean) => {

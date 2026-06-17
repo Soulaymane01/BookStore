@@ -172,6 +172,7 @@ const parsedBooks: Book[] = (rawBooks as unknown as Book[]).map(book => {
   if (book.manhaj === "Sanabel" && fiae === "تعليم اللغة العربية") {
     if (book.title.match(/ثانوي|إعدادي|اعدادي/)) subfiat = "الاعدادي";
     else if (book.title.match(/محو|كبار|الكبار|الوحدة/)) subfiat = "محو الامية";
+    else if (book.title.includes("خطوتي")) subfiat = "مستويات الحضانة";
     else subfiat = "الابتدائي";
   }
 

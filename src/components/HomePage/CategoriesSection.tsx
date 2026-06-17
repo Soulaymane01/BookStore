@@ -73,10 +73,10 @@ const CategoriesSection: React.FC = () => {
                     animate={{ y: 0 }}
                     className="transform transition-transform duration-500 group-hover:-translate-y-4"
                   >
-                    <span className="inline-block px-4 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs uppercase tracking-widest mb-6 px-10">
+                    <span className="hidden md:inline-block px-4 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs uppercase tracking-widest mb-6 px-10">
                       {(manhaj.translations as any)[language]?.type || 'Curriculum'}
                     </span>
-                    <h4 className="text-4xl md:text-5xl font-bold mb-6">
+                    <h4 className="hidden md:block text-5xl font-bold mb-6">
                       {(manhaj.translations as any)[language]?.name}
                     </h4>
                     <p className="text-white/70 max-w-sm line-clamp-2 md:text-lg mb-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
