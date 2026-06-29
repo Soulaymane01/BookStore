@@ -75,7 +75,7 @@ export const manahij: Manhaj[] = [
       image_url: "/curriculum/جميع-كتب-سلسلة-التأسيس-المتكامل-.jpeg",
       translations: {
         ar: {
-          name: "تأسيس متكامل",
+          name: "التأسيس المتكامل",
           description: "منهج ميسر متكامل يأتي في سبعة كتب أعدَّت بعناية وفق منهجية فريدة تجمع بين تعليم اللغة العربية وتعليم القرآن الكريم بأسلوب تفاعلي عصري يناسب الصغار والكبار من الناطقين باللغة العربية أو بغيرها."
         },
         en: {
@@ -128,8 +128,8 @@ export const manahij: Manhaj[] = [
       image_url: "/curriculum/logo-sanabel.jpeg",
       translations: {
         ar: {
-          name: "سنابل",
-          description: "سنابل أوروبا هي دار نشر تهتم بتعليم اللغة العربية والدراسات الإسلامية في أوروبا وأمريكا الشمالية..."
+          name: "السنابل",
+          description: "السنابل أوروبا هي دار نشر تهتم بتعليم اللغة العربية والدراسات الإسلامية في أوروبا وأمريكا الشمالية..."
         },
         en: {
           name: "Sanabel",
@@ -197,8 +197,17 @@ export const getManhajById = (id: string): Manhaj | undefined => {
 };
 
 export const getFiatByManhaj = (manhaj: string): string[] => {
-  console.log([...new Set(books.filter(book => book.manhaj === manhaj).map(book => book.fiae))].filter(Boolean))
-  return [...new Set(books.filter(book => book.manhaj === manhaj).map(book => book.fiae))].filter(Boolean);
+  const fiatOrder: Record<string, string[]> = {
+    Sanabel: ["تعليم الأسلام", "تعليم اللغة العربية", "أدواة التنظيم"]
+  };
+
+  const fiats = [...new Set(books.filter(book => book.manhaj === manhaj).map(book => book.fiae))].filter(Boolean);
+
+  if (fiatOrder[manhaj]) {
+    return fiatOrder[manhaj].filter(f => fiats.includes(f));
+  }
+
+  return fiats;
 };
 
 export const getSubfiatsByManhajAndFiat = (manhaj: string, fiat: string): string[] => {
